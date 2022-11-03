@@ -14,7 +14,7 @@
             Vorname2&nbsp;Nachname2,&nbsp;Matrikelnr2 </p>
     </div>
 </div>
-<div name="Seitenuebersicht" style="padding-top:2em;">
+<div name="container-fluid" style="padding-top:2em;">
     <table class="table table-secondary table-striped table-hover">
         <thead class="lead">
         <tr>
@@ -35,6 +35,9 @@
             <!-- for adding new site-->
         </tbody>
     </table>
+    <div align="right">
+        <p class="lead" style="font-size:1em">PHP-Version: <?php echo PHP_VERSION; ?></p>
+    </div>
 </div>
 </body>
 </html>
