@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="loosen-it.de" id="3ac8f2c8-ae22-448a-9ac2-3669f474cd6b" port="22" nameFormat="DESCRIPTIVE" username="sftp_guest" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

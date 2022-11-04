@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6af5d4d5-3b3e-4cc1-844d-34874046236f" name="sftp_guest" url="">
+        <fileTransfer rootFolder="/live" accessType="SFTP" host="loosen-it.de" port="22" sshConfigId="3ac8f2c8-ae22-448a-9ac2-3669f474cd6b" sshConfig="sftp_guest@loosen-it.de:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
