@@ -7,6 +7,5 @@
 <body>
     <p>HREF works fine!</p>
     <a href="index.php">Back to Index!</a>
-
 </body>
 </html>
