@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
     <title>TODO-Liste</title>
 </head>
 <body>
