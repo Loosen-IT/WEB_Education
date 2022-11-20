@@ -24,7 +24,7 @@
                         <a href="tmp.php">Projekte</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="">Aktuelles Projekt</a>
+                        <a href="tmp.php">Aktuelles Projekt</a>
                     </li>
                     <ul>
                         <li class="list-group-item">
