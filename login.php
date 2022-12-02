@@ -26,7 +26,7 @@ block("Aufgabenplaner: Login");
                     Noch nicht registriert? <a href="register.html"> Registrierung</a>
                     <br>
                     <br>
-                    Da der Login-Vorgang technisch noch nicht realisiert wurde: <a href="index.html"> Überspringen</a>
+                    Da der Login-Vorgang technisch noch nicht realisiert wurde: <a href="index.php"> Überspringen</a>
                 </div>
             </form>
         </div>

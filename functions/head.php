@@ -6,6 +6,7 @@ function head($title){
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles/bootstrap.css">
+        <link rel="stylesheet" href="styles/custom.css">
         <title><?php echo $title; ?></title>
     </head>
     <?php
