@@ -1,8 +1,8 @@
 <?php
 require 'functions/head.php';
 require 'functions/block.php';
-head("Liste");
-block("Aufgabenplaner: TODO's (Aktuelles Projekt)");
+head("Login");
+block("Aufgabenplaner: Login");
 ?>
 
 <div class="container">
@@ -23,10 +23,10 @@ block("Aufgabenplaner: TODO's (Aktuelles Projekt)");
                 </div>
                 <button type="submit" class="btn btn-primary">Einloggen</button>
                 <div class="mb-3">
-Noch nicht registriert? <a href="register.html"> Registrierung</a>
+                    Noch nicht registriert? <a href="register.html"> Registrierung</a>
                     <br>
                     <br>
-Da der Login-Vorgang technisch noch nicht realisiert wurde: <a href="index.html"> Überspringen</a>
+                    Da der Login-Vorgang technisch noch nicht realisiert wurde: <a href="index.html"> Überspringen</a>
                 </div>
             </form>
         </div>

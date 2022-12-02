@@ -1,8 +1,8 @@
 <?php
 require 'functions/head.php';
 require 'functions/block.php';
-head("Liste");
-block("Aufgabenplaner: TODO's (Aktuelles Projekt)");
+head("Projekte");
+block("Aufgabenplaner: Projekte");
 ?>
 
 <div class="row px-2">
