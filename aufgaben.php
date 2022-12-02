@@ -30,19 +30,28 @@ block("Aufgabenplaner: Aufgaben");
                 </div>
             </li>
 
-            <li class="list-group-item">
+            <?php
+            include "data/exercises.php";
+            $arr = get_exercises();
+
+            $c = count($arr);
+            $j = 0;
+            for($j; $j<$c; $j++){
+                ?>
+
+                <li class="list-group-item">
                 <div class="row">
                     <div class="col-3">
-                        <p> HTML Datei erstellen</p>
+                        <p> <?php echo $arr[$j]['bezeichnung']?></p>
                     </div>
                     <div class="col-3">
-                        <p> HTML Datei erstellen </p>
+                        <p> <?php echo $arr[$j]['beschreibung']?></p>
                     </div>
                     <div class="col-2">
-                        <p> ToDo</p>
+                        <p> <?php echo $arr[$j]['reiter']?></p>
                     </div>
                     <div class="col-2">
-                        <p> Max Mustermann</p>
+                        <p> <?php echo $arr[$j]['person']?></p>
                     </div>
                     <div class="col-2">
                         <button class="reiter">
@@ -60,5 +69,10 @@ block("Aufgabenplaner: Aufgaben");
                     </div>
                 </div>
             </li>
+
+            <?php
+            }
+            ?>
+
 </div>
 
