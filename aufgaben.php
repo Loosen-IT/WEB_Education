@@ -38,7 +38,7 @@ block("Aufgabenplaner: Aufgaben");
 
             for($j=0; $j<$c; $j++){
                 if($arr[$j]==null) {
-                    echo("Fehlender Eintrag");
+                    echo("Fehlendes Array");
                     break;
                 }
                 ?>
@@ -79,5 +79,40 @@ block("Aufgabenplaner: Aufgaben");
             ?>
         </ul>
 
+        <label class="fs-4 mt-4">Bearbeiten/Erstellen</label>
+        <br>
+        <label class="fs-6 mt-1 mb-2">Aufgabenbezeichnung: </label>
+        <input type="text" placeholder="Aufgabe" id="form12" class="form-control" />
+
+        <br>
+
+        <label class="fs-6 mt-1 mb-2">Beschreibung der Aufgabe:</label>
+        <textarea class="form-control mb-2" placeholder="Beschreibung" style="height: 100px" id="textarea"></textarea>
+
+        <label class="fs-6 mt-1 mb-2">Erstellungsdatum: </label>
+        <input type="text" placeholder="01.01.19" id="form12" class="form-control" />
+        <br>
+        <label class="fs-6 mt-1 mb-2">fällig bis:</label>
+        <input type="text" placeholder="01.01.19" id="form12" class="form-control" />
+        <br>
+
+        <label class="fs-6 mt-1 mb-2">Zugehöriger Reiter:</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>- bitte auswählen -</option>
+            <option value="1">Beispiel 1</option>
+            <option value="2">Beispiel 2</option>
+        </select>
+        <br>
+
+        <label class="fs-6 mt-1 mb-2">Zuständig:</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>- bitte auswählen -</option>
+            <option value="1">Beispiel 1</option>
+        </select>
+
+
+        <br>
+        <button type="button" class="btn btn-primary">Speichern</button>
+        <button type="button" class="btn btn-info">Reset</button>
 </div>
 

@@ -35,7 +35,7 @@ block("Aufgabenplaner: Reiter");
 
             for($j=0; $j<$c; $j++){
             if($arr[$j]==null) {
-                echo("Fehlender Eintrag");
+                echo("Fehlendes Array");
                 break;
             }
             ?>
@@ -82,7 +82,7 @@ block("Aufgabenplaner: Reiter");
         <textarea class="form-control mb-2" placeholder="Beschreibung" style="height: 100px" id="textarea"></textarea>
 
         <button type="button" class="btn btn-primary">Speichern</button>
-        <button type="button" class="btn btn-info"><p class ></button>
+        <button type="button" class="btn btn-info">Reset</button>
 
     </div>
 

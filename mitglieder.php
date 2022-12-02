@@ -35,7 +35,7 @@ block("Aufgabenplaner: Mitglieder");
 
             for($j=1; $j<=$c; $j++){
                 if($arr[$j]==null) {
-                    echo("Fehlender Eintrag");
+                    echo("Fehlendes Array");
                     break;
                 }
             ?>
@@ -73,5 +73,31 @@ block("Aufgabenplaner: Mitglieder");
             }
             ?>
         </ul>
+
+        <label class="fs-4 mt-4">Bearbeiten/Erstellen</label>
+        <br>
+        <label class="fs-6 mt-1 mb-2">Username:</label>
+        <input type="text" placeholder="Username" id="form12" class="form-control" />
+        <br>
+
+        <div class="mb-3">
+            <label for="exampleDropdownFormEmail1" class="form-label">E-Mail-Adresse:</label>
+            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="E-Mail-Adresse eingeben">
+        </div>
+        <div class="mb-3">
+            <label for="exampleDropdownFormPassword1" class="form-label">Passwort:</label>
+            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Passwort">
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                <label class="form-check-label" for="dropdownCheck">
+                    Dem Projekt zugeordnet
+                </label>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary">Speichern</button>
+        <button type="button" class="btn btn-info">Reset</button>
 
 </div>
