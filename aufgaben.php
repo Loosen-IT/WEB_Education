@@ -35,23 +35,27 @@ block("Aufgabenplaner: Aufgaben");
             $arr = get_exercises();
 
             $c = count($arr);
-            $j = 0;
-            for($j; $j<$c; $j++){
+
+            for($j=0; $j<$c; $j++){
+                if($arr[$j]==null) {
+                    echo("Fehlender Eintrag");
+                    break;
+                }
                 ?>
 
                 <li class="list-group-item">
                 <div class="row">
                     <div class="col-3">
-                        <p> <?php echo $arr[$j]['bezeichnung']?></p>
+                        <p> <?php echo ($arr[$j]['bezeichnung']==null) ? ('Fehlender Eintrag!') : $arr[$j]['bezeichnung'] ?> </p>
                     </div>
                     <div class="col-3">
-                        <p> <?php echo $arr[$j]['beschreibung']?></p>
+                        <p> <?php echo ($arr[$j]['beschreibung']==null) ? ('Fehlender Eintrag!') : $arr[$j]['beschreibung'] ?></p>
                     </div>
                     <div class="col-2">
-                        <p> <?php echo $arr[$j]['reiter']?></p>
+                        <p> <?php echo ($arr[$j]['reiter']==null) ? ('Fehlender Eintrag!') : $arr[$j]['reiter'] ?> </p>
                     </div>
                     <div class="col-2">
-                        <p> <?php echo $arr[$j]['person']?></p>
+                        <p> <?php echo ($arr[$j]['person']==null) ? ('Fehlender Eintrag!') : $arr[$j]['person']?> </p>
                     </div>
                     <div class="col-2">
                         <button class="reiter">
