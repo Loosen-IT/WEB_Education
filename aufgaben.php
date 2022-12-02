@@ -77,6 +77,7 @@ block("Aufgabenplaner: Aufgaben");
             <?php
             }
             ?>
+        </ul>
 
 </div>
 
