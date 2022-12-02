@@ -1,30 +1,11 @@
-<?php ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="bootstrap.css">
-    <title>Login</title>
-</head>
-<body>
-
-<div class = "container-fluid">
-    <div class ="bg-light">
-        <div class="row">
-            <div class="col-8">
-                <p class="text-center fs-1 p-5">
-Aufgabenplaner: Login
-</p>
-            </div>
-        </div>
-    </div>
-</div>
+<?php
+require 'functions/functions.php';
+head("Login");
+block('Aufgabenplaner: Login');
+?>
 
 <div class="container">
     <div class="row">
-        <div class="col-2">
-
-        </div>
         <div class="col-8">
             <form>
                 <div class="mb-3">

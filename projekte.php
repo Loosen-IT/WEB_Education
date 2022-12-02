@@ -1,49 +1,14 @@
-<?php ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="bootstrap.css">
-    <title>Projekte</title>
-</head>
-
-<body>
-<div class = "container-fluid">
-    <div class ="bg-light">
-        <div class="row">
-            <div class="col-8">
-                <p class="text-center fs-1 p-5">
-                    Aufgabenplaner: Projekte
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+<?php
+require 'functions/functions.php';
+head("Projekte");
+block('Aufgabenplaner: Projekte');
+?>
 
 <div class="row">
     <div class="col-2">
-        <ul class="list-group container">
-            <li class="list-group-item">
-                <a href="login.html">Login</a>
-            </li>
-            <li class="list-group-item">
-                <a href="projekte.html">Projekte</a>
-            </li>
-            <li class="list-group-item">
-                <a href="">Aktuelles Projekt</a>
-            </li>
-            <ul>
-                <li class="list-group-item">
-                    <a href="reiter.html">Reiter</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="tmp.php">Aufgaben</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="tmp.php">Mitglieder</a>
-                </li>
-            </ul>
-        </ul>
+        <?php
+        sidebar();
+        ?>
     </div>
 
     <div class="col-8">
