@@ -1,11 +1,12 @@
 <?php
-require 'functions/functions.php';
-head("Login");
-block('Aufgabenplaner: Login');
+require 'functions/head.php';
+require 'functions/block.php';
+head("Liste");
+block("Aufgabenplaner: TODO's (Aktuelles Projekt)");
 ?>
 
 <div class="container">
-    <div class="row">
+    <div class="row px-2">
         <div class="col-8">
             <form>
                 <div class="mb-3">
