@@ -13,10 +13,10 @@
             <a href="reiter.php">Reiter</a>
         </li>
         <li class="list-group-item">
-            <a href="https://google.de">Aufgaben</a>
+            <a href="aufgaben.php">Aufgaben</a>
         </li>
         <li class="list-group-item">
-            <a href="https://google.de">Mitglieder</a>
+            <a href="mitglieder.php">Mitglieder</a>
         </li>
     </ul>
 </ul>
