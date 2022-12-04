@@ -1,4 +1,5 @@
 <?php
+include 'data/session.php';
 require 'functions/head.php';
 require 'functions/block.php';
 head("Projekte");
@@ -15,11 +16,14 @@ block("Aufgabenplaner: Projekte");
     <div class="col-8">
 
         <label class="fs-3 fw-semibold">Projekt auswählen:</label>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>- bitte auswählen -</option>
-            <option value="1">Beispiel 1</option>
-            <option value="2">Beispiel 2</option>
-            <option value="3">Beispiel 3</option>
+        <select id="project" class="form-select" aria-label="Default select example">
+            <?php
+            foreach($_SESSION['projects'] as $project) {
+                ?>
+                <option value="<?php echo $project['id']; ?>"><?php echo $project['name']; ?></option>
+                <?php
+            }
+            ?>
         </select>
 
         <br>
@@ -29,19 +33,20 @@ block("Aufgabenplaner: Projekte");
         <button type="button" class="btn btn-danger">Löschen</button>
 
         <br>
-
-        <label class="fs-3 fw-semibold mt-2">Projekt bearbeiten/erstellen:</label>
-        <br>
-        <label class="fs-5 mt-1 mb-2">Projektname:</label>
-        <input type="text" placeholder="Projekt" id="form12" class="form-control" />
-
         <br>
 
-        <label class="fs-5 mt-1 mb-2">Projektbeschreibung:</label>
-        <textarea class="form-control mb-2" placeholder="Beschreibung" style="height: 100px" id="textarea"></textarea>
-
-        <button type="button" class="btn btn-primary">Speichern</button>
-        <button type="button" class="btn btn-info">Reset</button>
+        <label class="fs-3 fw-semibold mt-2 pb-2">Projekt bearbeiten/erstellen:</label>
+        <br>
+        <form>
+            <label class="fs-6 mt-1 mb-2">Projektname:</label>
+            <input type="text" placeholder="E-Mail-Adresse" id="name" class="form-control" />
+            <br>
+            <label class="fs-6 mt-1 mb-2">Beschreibung:</label>
+            <textarea type="text-area" rows="4" placeholder="Beschreibung" id="description" class="form-control"></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Speichern</button>
+            <button type="button" class="btn btn-info text-white">Reset</button>
+        </form>
 
     </div>
 </div>

@@ -1,8 +1,9 @@
 <?php
+    include 'data/session.php';
     require 'functions/head.php';
     require 'functions/block.php';
     head("Liste");
-    block("Aufgabenplaner: TODO's (Aktuelles Projekt)");
+    block("Aufgabenplaner: TODO's ".$_SESSION['projects'][$_SESSION['project']]['name']);
 ?>
 
 <div class="row px-2">
@@ -14,38 +15,32 @@
 
     <div class="col-10">
         <div class="row">
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        Todo:
+            <?php
+            foreach($_SESSION['reiter'] as $reiter){
+                if(strcmp($reiter['project'],$_SESSION['project'])==0){
+                ?>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                        <?php echo $reiter['name']; ?>
+                        </div>
+                        <?php
+                        foreach($_SESSION['exercises'] as $exercise){
+                            if(strcmp($reiter['id'],$exercise['reiter'])==0){
+                                ?>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><?php echo $exercise['bezeichnung']." (".$_SESSION['members'][$exercise['person']]['username'].")"?></li>
+                                </ul>
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">HTML Datei erstellen (Max Mustermann)</li>
-                        <li class="list-group-item">CSS Datei erstellen (Max Mustermann)</li>
-                    </ul>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        Erledigt:
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">PC eingeschaltet (Petra Müller)</li>
-                        <li class="list-group-item">Kaffe trinken (Petra Müller)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        Verschoben:
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Für die Uni lernen (Max Mustermann)</li>
-                    </ul>
-                </div>
-            </div>
+                <?php
+                }
+            }
+            ?>
         </div>
     </div>
 </div>

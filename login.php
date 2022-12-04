@@ -1,4 +1,5 @@
 <?php
+include 'data/session.php';
 require 'functions/head.php';
 require 'functions/block.php';
 head("Login");
@@ -22,6 +23,8 @@ block("Aufgabenplaner: Login");
                     <label class="form-check-label" for="exampleCheck1">AGBs und Datenschutzbedingungen akzeptieren</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Einloggen</button>
+                <br>
+                <br>
                 <div class="mb-3">
                     Noch nicht registriert? <a href="register.html"> Registrierung</a>
                     <br>

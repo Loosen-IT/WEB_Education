@@ -1,5 +1,10 @@
-.reiter {
+.table-button {
     background-color: #ffffff;
     border: none;
+}
 
+.table-button:hover{
+    border: solid #0000FF;
+    border-radius:0.5rem;
+    border-width:0.1rem;
 }
