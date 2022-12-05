@@ -2,11 +2,11 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 
-    require_once('exercises.php');
-    require_once('members.php');
-    require_once('projects.php');
-    require_once('reiter.php');
-    require_once('uebersicht.php');
+    require_once dirname(__FILE__).'/exercises.php';
+    require_once dirname(__FILE__).'/members.php';
+    require_once dirname(__FILE__).'/projects.php';
+    require_once dirname(__FILE__).'/reiter.php';
+    require_once dirname(__FILE__).'/uebersicht.php';
 
     //Aktuelles Projekt (DEFAULT: p1)
     $_SESSION['project']='p1';

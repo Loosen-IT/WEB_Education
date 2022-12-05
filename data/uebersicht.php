@@ -1,9 +1,7 @@
 <?php
 function get_uebersicht(){
-    require_once('reiter.php');
-    require_once('exercises.php');
     $reiters = $_SESSION['reiter'];
-    $aufgaben = get_exercises();
+    $aufgaben = $_SESSION['exercises'];
 
     $arr = array();
 

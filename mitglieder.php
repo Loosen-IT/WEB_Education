@@ -1,8 +1,8 @@
 <?php
-include 'data/session.php';
-require 'functions/head.php';
-require 'functions/block.php';
-head("Reiter");
+include dirname(__FILE__).'/data/session.php';
+require dirname(__FILE__).'/functions/head.php';
+require dirname(__FILE__).'/functions/block.php';
+head("Mitglieder");
 block("Aufgabenplaner: Mitglieder");
 ?>
 

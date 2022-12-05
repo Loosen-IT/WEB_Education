@@ -1,7 +1,7 @@
 <?php
-    include 'data/session.php';
-    require 'functions/head.php';
-    require 'functions/block.php';
+    include dirname(__FILE__).'/data/session.php';
+    require dirname(__FILE__).'/functions/head.php';
+    require dirname(__FILE__).'/functions/block.php';
     head("Liste");
     block("Aufgabenplaner: TODO's ".$_SESSION['projects'][$_SESSION['project']]['name']);
 ?>
@@ -9,7 +9,7 @@
 <div class="row px-2">
     <div class="col-2">
         <?php
-        include 'functions/sidebar.php';
+        include dirname(__FILE__).'/functions/sidebar.php';
         ?>
     </div>
 
