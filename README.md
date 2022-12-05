@@ -5,4 +5,4 @@ Name: Alexander Rieb (1593328)
 
 Link Gith: https://github.com/Loosen-IT/WEB_Education.git
 
-Link Site: education.loosen-it.de or COMING SOON
+Link Site: https://education.loosen-it.de or COMING SOON
