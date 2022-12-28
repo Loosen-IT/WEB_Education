@@ -1,7 +1,7 @@
 <?php
-include dirname(__FILE__).'/data/session.php';
-require dirname(__FILE__).'/functions/head.php';
-require dirname(__FILE__).'/functions/block.php';
+include dirname(__FILE__) . '/data/session.php';
+require dirname(__FILE__) . '/functions/head.php';
+require dirname(__FILE__) . '/functions/block.php';
 head("Login");
 block("Aufgabenplaner: Login");
 ?>

@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Login extends BaseController
 {
     public function index()
     {
@@ -13,6 +13,6 @@ class Home extends BaseController
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 
-        return view('pages/uebersicht');
+        return view('pages/login');
     }
 }

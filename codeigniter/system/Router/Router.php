@@ -64,7 +64,7 @@ class Router implements RouterInterface
      *
      * @var string
      */
-    protected $indexPage = 'index.php';
+    protected $indexPage = 'uebersicht.php';
 
     /**
      * Whether dashes in URI's should be converted
@@ -323,8 +323,8 @@ class Router implements RouterInterface
     }
 
     /**
-     * Sets the value that should be used to match the index.php file. Defaults
-     * to index.php but this allows you to modify it in case your are using
+     * Sets the value that should be used to match the uebersicht.php file. Defaults
+     * to uebersicht.php but this allows you to modify it in case your are using
      * something like mod_rewrite to remove the page. This allows you to set
      * it a blank.
      *

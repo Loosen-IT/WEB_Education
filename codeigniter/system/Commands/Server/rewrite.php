@@ -28,8 +28,8 @@ $uri = urldecode(
     parse_url('https://codeigniter.com' . $_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? ''
 );
 
-// All request handle by index.php file.
-$_SERVER['SCRIPT_NAME'] = '/index.php';
+// All request handle by uebersicht.php file.
+$_SERVER['SCRIPT_NAME'] = '/uebersicht.php';
 
 // Full path
 $path = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . ltrim($uri, '/');

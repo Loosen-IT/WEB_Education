@@ -81,7 +81,7 @@ class CLIRequest extends Request
      * as if it were a URL - up until we hit our first option.
      *
      * Example:
-     *      php index.php users 21 profile -foo bar
+     *      php uebersicht.php users 21 profile -foo bar
      *
      *      // Routes to /users/21/profile (index is removed for routing sake)
      *      // with the option foo = bar.
@@ -179,7 +179,7 @@ class CLIRequest extends Request
     protected function parseCommand()
     {
         $args = $this->getServer('argv');
-        array_shift($args); // Scrap index.php
+        array_shift($args); // Scrap uebersicht.php
 
         $optionValue = false;
 

@@ -144,7 +144,7 @@ class CodeIgniter
     /**
      * Context
      *  web:     Invoked by HTTP request
-     *  php-cli: Invoked by CLI via `php public/index.php`
+     *  php-cli: Invoked by CLI via `php public/uebersicht.php`
      *  spark:   Invoked by CLI via the `spark` command
      *
      * @phpstan-var 'php-cli'|'spark'|'web'
@@ -297,7 +297,7 @@ class CodeIgniter
         $this->returnResponse = $returnResponse;
 
         if ($this->context === null) {
-            throw new LogicException('Context must be set before run() is called. If you are upgrading from 4.1.x, you need to merge `public/index.php` and `spark` file from `vendor/codeigniter4/framework`.');
+            throw new LogicException('Context must be set before run() is called. If you are upgrading from 4.1.x, you need to merge `public/uebersicht.php` and `spark` file from `vendor/codeigniter4/framework`.');
         }
 
         static::$cacheTTL = 0;
@@ -900,7 +900,7 @@ class CodeIgniter
      *      output controlled by Headers to browser
      *  2. Spark: accessed by CLI via the spark command, arguments are Command arguments,
      *      sent to Commands by CommandRunner, output controlled by CLI class
-     *  3. PHP CLI: accessed by CLI via php public/index.php, arguments become URI segments,
+     *  3. PHP CLI: accessed by CLI via php public/uebersicht.php, arguments become URI segments,
      *      sent to Controllers via Routes, output varies
      *
      * @param mixed $class
