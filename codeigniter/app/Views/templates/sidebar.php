@@ -1,22 +1,22 @@
 <ul class="list-group container">
     <li class="list-group-item">
-        <a href="<?= site_url('Home/create_login') ?>>">Login</a>
+        <a href="<?= base_url('Login') ?>>">Login</a>
     </li>
     <li class="list-group-item">
-        <a href="<?= site_url('Home/create_projects') ?>">Projekte</a>
+        <a href="<?= base_url('Projekte') ?>">Projekte</a>
     </li>
     <li class="list-group-item">
-        <a href="<?= site_url('Home/index') ?>">Aktuelles Projekt</a>
+        <a href="<?= base_url('Home') ?>">Aktuelles Projekt</a>
     </li>
     <ul>
         <li class="list-group-item">
-            <a href="<?= site_url('Home/create_reiter') ?>">Reiter</a>
+            <a href="<?= base_url('Login') ?>">Reiter</a>
         </li>
         <li class="list-group-item">
-            <a href="<?= site_url('Home/create_exercises') ?>">Aufgaben</a>
+            <a href="<?= base_url('Aufgaben') ?>">Aufgaben</a>
         </li>
         <li class="list-group-item">
-            <a href="<?= site_url('Home/create_members') ?>">Mitglieder</a>
+            <a href="<?= base_url('Mitglieder') ?>">Mitglieder</a>
         </li>
     </ul>
 </ul>

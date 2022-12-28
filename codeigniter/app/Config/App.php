@@ -26,7 +26,7 @@ class App extends BaseConfig
      */
 
     //TODO: Correct url later
-    public $baseURL = 'http://192.168.178.77:80/';
+    public $baseURL = 'http://192.168.178.77:80/education/codeigniter/public/';
     //public $baseURL = 'http://localhost:80/';
 
     /**
@@ -40,7 +40,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $indexPage = 'index.php';
+    public $indexPage = 'index';
 
     /**
      * --------------------------------------------------------------------------
