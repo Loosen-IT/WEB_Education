@@ -1,16 +1,6 @@
-<?php
-include dirname(__FILE__) . '/data/session.php';
-require dirname(__FILE__) . '/functions/head.php';
-require dirname(__FILE__) . '/functions/block.php';
-head("Mitglieder");
-block("Aufgabenplaner: Mitglieder");
-?>
-
 <div class="row px-2">
     <div class="col-2">
-        <?php
-        include 'functions/sidebar.php';
-        ?>
+        <?php echo view('templates/sidebar'); ?>
     </div>
     <div class="col-8">
         <table class="table">
@@ -24,7 +14,7 @@ block("Aufgabenplaner: Mitglieder");
             </thead>
             <tbody>
             <?php
-            $members = $_SESSION['members'];
+            $members = $DATA_mitglieder;
             foreach($members as $member){
                 ?>
                 <tr>

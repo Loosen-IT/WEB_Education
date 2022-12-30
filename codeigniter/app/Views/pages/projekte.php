@@ -1,16 +1,6 @@
-<?php
-include dirname(__FILE__) . '/data/session.php';
-require dirname(__FILE__) . '/functions/head.php';
-require dirname(__FILE__) . '/functions/block.php';
-head("Projekte");
-block("Aufgabenplaner: Projekte");
-?>
-
 <div class="row px-2">
     <div class="col-2">
-        <?php
-        include 'functions/sidebar.php';
-        ?>
+        <?php echo view('templates/sidebar'); ?>
     </div>
 
     <div class="col-8">
@@ -18,7 +8,7 @@ block("Aufgabenplaner: Projekte");
         <label class="fs-3 fw-semibold">Projekt auswählen:</label>
         <select id="project" class="form-select" aria-label="Default select example">
             <?php
-            foreach($_SESSION['projects'] as $project) {
+            foreach($DATA_projekte as $project) {
                 ?>
                 <option value="<?php echo $project['id']; ?>"><?php echo $project['name']; ?></option>
                 <?php

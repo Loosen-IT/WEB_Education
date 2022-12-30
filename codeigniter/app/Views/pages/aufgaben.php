@@ -1,16 +1,6 @@
-<?php
-include dirname(__FILE__) . '/data/session.php';
-require dirname(__FILE__) . '/functions/head.php';
-require dirname(__FILE__) . '/functions/block.php';
-head("Aufgaben");
-block("Aufgabenplaner: Aufgaben");
-?>
-
 <div class="row px-2">
     <div class="col-2">
-        <?php
-        include 'functions/sidebar.php';
-        ?>
+        <?php echo view('templates/sidebar'); ?>
     </div>
     <div class="col-8 pb-5">
         <table class="table">
@@ -25,15 +15,15 @@ block("Aufgabenplaner: Aufgaben");
             </thead>
             <tbody>
             <?php
-            $exercises = $_SESSION['exercises'];
+            $exercises = $DATA_aufgaben;
             foreach($exercises as $exercise){
                 if(strcmp($exercise['project'],$_SESSION['project']) == 0){
                     ?>
                     <tr>
                         <td><?php echo $exercise['bezeichnung']; ?></td>
                         <td><?php echo $exercise['beschreibung']; ?></td>
-                        <td><?php echo $_SESSION['reiter'][$exercise['reiter']]['name']; ?></td>
-                        <td><?php echo $_SESSION['members'][$exercise['person']]['username']; ?></td>
+                        <td><?php echo $DATA_reiter[$exercise['reiter']]['name']; ?></td>
+                        <td><?php echo $DATA_mitglieder[$exercise['person']]['username']; ?></td>
                         <td>
                             <div class="container d-flex justify-content-end">
                                 <button class="table-button" id="<?php echo $exercise['id']; ?>_edit" class="reiter-button">
@@ -75,7 +65,7 @@ block("Aufgabenplaner: Aufgaben");
             <label class="fs-6 mt-1 mb-2">Zugehöriger Reiter:</label>
             <select id="reiter" class="form-select" aria-label="Default select example">
                 <?php
-                foreach($_SESSION['reiter'] as $reiter)
+                foreach($DATA_reiter as $reiter)
                     if(strcmp($reiter['project'],$_SESSION['project'])==0){
                         ?>
                         <option value="<?php echo $reiter['id']; ?>"><?php echo $reiter['name']; ?></option>
@@ -87,7 +77,7 @@ block("Aufgabenplaner: Aufgaben");
             <label class="fs-6 mt-1 mb-2">Zuständig:</label>
             <select class="form-select" aria-label="Default select example">
                 <?php
-                foreach($_SESSION['members'] as $member)
+                foreach($DATA_mitglieder as $member)
                     if(array_search($_SESSION['project'], $member['projects']) !== false){
                         ?>
                         <option value="<?php echo $member['id']; ?>"><?php echo $member['username']; ?></option>

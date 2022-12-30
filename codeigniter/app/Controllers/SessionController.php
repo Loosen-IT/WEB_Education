@@ -1,10 +1,16 @@
 <?php
 
 namespace App\Controllers;
-use CodeIgniter\Controller;
 
-class ARRAYS
+class SessionController extends BaseController
 {
+    //Temporaere Loesung um aktuelles Projekt zu speichern
+    public function session_parameters(){
+        if(!isset($_SESSION['project'])){
+            $_SESSION['project'] = "p1";
+        }
+    }
+
     public function create_aufgaben(){
         $exercises = array(
             array(
@@ -130,9 +136,9 @@ class ARRAYS
     }
 
 
-    function get_uebersicht(){
+    function create_uebersicht(){
         $reiters = $this->create_reiter();
-        $aufgaben = $this->create_mitglieder();
+        $aufgaben = $this->create_aufgaben();
 
         $uebersicht = array();
 

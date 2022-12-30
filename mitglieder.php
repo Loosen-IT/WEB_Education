@@ -1,11 +1,3 @@
-<?php
-include dirname(__FILE__).'/data/session.php';
-require dirname(__FILE__).'/functions/head.php';
-require dirname(__FILE__).'/functions/block.php';
-head("Mitglieder");
-block("Aufgabenplaner: Mitglieder");
-?>
-
 <div class="row px-2">
     <div class="col-2">
         <?php

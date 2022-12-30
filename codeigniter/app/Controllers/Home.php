@@ -3,13 +3,21 @@
 namespace App\Controllers;
 use CodeIgniter\Controller;
 
-class Home extends BaseController
+class Home extends SessionController
 {
     public function index()
     {
-        $data['INFO_title'] = "Aktuelles Projekt";
-        $data['CSS_bootstrap'] = base_url('/styles/').'/bootstrap.css';
-        $data['CSS_custom'] = base_url('/styles/').'/custom.css';
+        $this->session_parameters();
+
+        $data['INFO_title'] = "Aufgabenplaner: Aktuelles Projekt";
+        $data['CSS_bootstrap'] = base_url('codeigniter/public/styles/').'/bootstrap.css';
+        $data['CSS_custom'] = base_url('codeigniter/public/styles/').'/custom.css';
+
+        $data['DATA_uebersicht'] = $this->create_uebersicht();
+        $data['DATA_reiter'] = $this->create_reiter();
+        $data['DATA_mitglieder'] = $this->create_mitglieder();
+        $data['DATA_aufgaben'] = $this->create_aufgaben();
+
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 

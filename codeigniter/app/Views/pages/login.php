@@ -1,11 +1,3 @@
-<?php
-include dirname(__FILE__) . '/data/session.php';
-require dirname(__FILE__) . '/functions/head.php';
-require dirname(__FILE__) . '/functions/block.php';
-head("Login");
-block("Aufgabenplaner: Login");
-?>
-
 <div class="container">
     <div class="row px-2">
         <div class="col-8">
@@ -29,7 +21,7 @@ block("Aufgabenplaner: Login");
                     Noch nicht registriert? <a href="register.html"> Registrierung</a>
                     <br>
                     <br>
-                    Da der Login-Vorgang technisch noch nicht realisiert wurde: <a href="index.php"> Überspringen</a>
+                    Da der Login-Vorgang technisch noch nicht realisiert wurde: <a href="<?= base_url('codeigniter/public/Home') ?>"> Überspringen</a>
                 </div>
             </form>
         </div>

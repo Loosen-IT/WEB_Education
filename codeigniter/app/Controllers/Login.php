@@ -3,17 +3,17 @@
 namespace App\Controllers;
 use CodeIgniter\Controller;
 
-class Login extends BaseController
+class Login extends SessionController
 {
     public function index()
     {
-        $data['INFO_title'] = "Aktuelles Projekt";
-        $data['CSS_bootstrap'] = base_url().'/education/codeigniter/public/styles/bootstrap.css';
-        $data['CSS_custom'] = base_url().'/education/codeigniter/public/styles/bootstrap.css';
+        $data['INFO_title'] = "Aufgabenplaner: Login";
+        $data['CSS_bootstrap'] = base_url().'/codeigniter/public/styles/bootstrap.css';
+        $data['CSS_custom'] = base_url().'/codeigniter/public/styles/custom.css';
 
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 
-        return view('pages/login');
+        echo view('pages/login');
     }
 }
