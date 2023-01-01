@@ -1,0 +1,1140 @@
+CRITICAL - 2023-01-01 08:18:43 --> Cannot access offset of type string on string
+in APPPATH\Views\pages\reiter.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/reiter', [], true)
+ 4 APPPATH\Controllers\Reiter.php(20): view('pages/reiter')
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:22:56 --> Undefined variable $debug
+in APPPATH\Views\pages\debugging.php on line 2.
+ 1 APPPATH\Views\pages\debugging.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $debug', 'APPPATH\\Views\\pages\\debugging.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\debugging.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/debugging', [], true)
+ 5 APPPATH\Controllers\DebuggingController.php(10): view('pages/debugging')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:23:18 --> Undefined variable $debug
+in APPPATH\Views\pages\debugging.php on line 2.
+ 1 APPPATH\Views\pages\debugging.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $debug', 'APPPATH\\Views\\pages\\debugging.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\debugging.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/debugging', [], true)
+ 5 APPPATH\Controllers\DebuggingController.php(10): view('pages/debugging')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:23:19 --> Undefined variable $debug
+in APPPATH\Views\pages\debugging.php on line 2.
+ 1 APPPATH\Views\pages\debugging.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $debug', 'APPPATH\\Views\\pages\\debugging.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\debugging.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/debugging', [], true)
+ 5 APPPATH\Controllers\DebuggingController.php(10): view('pages/debugging')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:29:38 --> Undefined array key "project"
+in APPPATH\Controllers\SessionController.php on line 128.
+ 1 APPPATH\Controllers\SessionController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Controllers\\SessionController.php', 128)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:30:13 --> Undefined array key "project"
+in APPPATH\Controllers\SessionController.php on line 128.
+ 1 APPPATH\Controllers\SessionController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Controllers\\SessionController.php', 128)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:30:14 --> Undefined array key "project"
+in APPPATH\Controllers\SessionController.php on line 128.
+ 1 APPPATH\Controllers\SessionController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Controllers\\SessionController.php', 128)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:30:15 --> Undefined array key "project"
+in APPPATH\Controllers\SessionController.php on line 128.
+ 1 APPPATH\Controllers\SessionController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Controllers\\SessionController.php', 128)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:30:15 --> Undefined array key "project"
+in APPPATH\Controllers\SessionController.php on line 128.
+ 1 APPPATH\Controllers\SessionController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Controllers\\SessionController.php', 128)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:30:15 --> Undefined array key "project"
+in APPPATH\Controllers\SessionController.php on line 128.
+ 1 APPPATH\Controllers\SessionController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Controllers\\SessionController.php', 128)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:30:38 --> Undefined array key "id"
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:30:39 --> Undefined array key "id"
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:30:39 --> Undefined array key "id"
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:31:07 --> Undefined array key 0
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:31:08 --> Undefined array key 0
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:31:09 --> Undefined array key 0
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:31:10 --> Undefined array key 0
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:31:18 --> Undefined array key 0
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:31:19 --> Undefined array key 0
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:31:20 --> Undefined array key 0
+in APPPATH\Controllers\SessionController.php on line 130.
+ 1 APPPATH\Controllers\SessionController.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\SessionController.php', 130)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:31:44 --> Undefined array key "id"
+in APPPATH\Views\pages\uebersicht.php on line 17.
+ 1 APPPATH\Views\pages\uebersicht.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\pages\\uebersicht.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('pages/uebersicht', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:32:25 --> Undefined array key 1
+in APPPATH\Views\pages\uebersicht.php on line 17.
+ 1 APPPATH\Views\pages\uebersicht.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\pages\\uebersicht.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('pages/uebersicht', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:32:26 --> Undefined array key 1
+in APPPATH\Views\pages\uebersicht.php on line 17.
+ 1 APPPATH\Views\pages\uebersicht.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\pages\\uebersicht.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('pages/uebersicht', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:35:26 --> Undefined array key "reiter"
+in APPPATH\Controllers\SessionController.php on line 82.
+ 1 APPPATH\Controllers\SessionController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reiter"', 'APPPATH\\Controllers\\SessionController.php', 82)
+ 2 APPPATH\Controllers\Home.php(16): App\Controllers\SessionController->create_uebersicht()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:36:38 --> Undefined array key "reiter"
+in APPPATH\Views\pages\uebersicht.php on line 17.
+ 1 APPPATH\Views\pages\uebersicht.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reiter"', 'APPPATH\\Views\\pages\\uebersicht.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('pages/uebersicht', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:37:05 --> Undefined array key "id_sreiter"
+in APPPATH\Views\pages\uebersicht.php on line 17.
+ 1 APPPATH\Views\pages\uebersicht.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_sreiter"', 'APPPATH\\Views\\pages\\uebersicht.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('pages/uebersicht', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:37:10 --> Undefined array key "bezeichnung"
+in APPPATH\Views\pages\uebersicht.php on line 20.
+ 1 APPPATH\Views\pages\uebersicht.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bezeichnung"', 'APPPATH\\Views\\pages\\uebersicht.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('pages/uebersicht', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:37:35 --> Undefined array key "person"
+in APPPATH\Views\pages\uebersicht.php on line 20.
+ 1 APPPATH\Views\pages\uebersicht.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "person"', 'APPPATH\\Views\\pages\\uebersicht.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+ 5 APPPATH\Controllers\Home.php(24): view('pages/uebersicht', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:42:35 --> Undefined array key "id"
+in APPPATH\Views\pages\reiter.php on line 25.
+ 1 APPPATH\Views\pages\reiter.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\pages\\reiter.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\reiter.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/reiter', [], true)
+ 5 APPPATH\Controllers\Reiter.php(20): view('pages/reiter')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:42:40 --> Undefined array key "id"
+in APPPATH\Views\pages\reiter.php on line 25.
+ 1 APPPATH\Views\pages\reiter.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\pages\\reiter.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\reiter.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/reiter', [], true)
+ 5 APPPATH\Controllers\Reiter.php(20): view('pages/reiter')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:43:00 --> Undefined array key "reiter_id"
+in APPPATH\Views\pages\reiter.php on line 25.
+ 1 APPPATH\Views\pages\reiter.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reiter_id"', 'APPPATH\\Views\\pages\\reiter.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\reiter.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/reiter', [], true)
+ 5 APPPATH\Controllers\Reiter.php(20): view('pages/reiter')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:46:27 --> mysqli_sql_exception: Not unique table/alias: 'mitglieder' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(28): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\Home.php(17): App\Controllers\SessionController->create_aufgaben_mitglieder()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:46:27 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 29.
+ 1 APPPATH\Controllers\Home.php(17): App\Controllers\SessionController->create_aufgaben_mitglieder()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:48:03 --> Undefined variable $DATA_reiter
+in APPPATH\Views\pages\uebersicht.php on line 8.
+ 1 APPPATH\Views\pages\uebersicht.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DATA_reiter', 'APPPATH\\Views\\pages\\uebersicht.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('pages/uebersicht', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:50:31 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:50:31 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:51:13 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:51:13 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:51:57 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:51:57 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:51:58 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:51:58 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:51:59 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:51:59 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:51:59 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:51:59 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:52:00 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:52:00 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:53:06 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:53:06 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:53:54 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:53:54 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:53:55 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:53:55 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:55:57 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:55:57 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:55:58 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:55:58 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:55:59 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:55:59 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:55:59 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:55:59 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:55:59 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:55:59 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:56:19 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:56:19 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:56:20 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:56:20 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 08:56:20 --> mysqli_sql_exception: Unknown column 'm.id_aufgaben' in 'on clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Controllers\SessionController.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+#5 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-01 08:56:20 --> Call to a member function getResultArray() on bool
+in APPPATH\Controllers\SessionController.php on line 41.
+ 1 APPPATH\Controllers\DebuggingController.php(9): App\Controllers\SessionController->debug()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\DebuggingController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DebuggingController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:59:10 --> Undefined array key "id"
+in APPPATH\Views\pages\mitglieder.php on line 24.
+ 1 APPPATH\Views\pages\mitglieder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\pages\\mitglieder.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(20): view('pages/mitglieder')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 08:59:36 --> Undefined array key "projects"
+in APPPATH\Views\pages\mitglieder.php on line 24.
+ 1 APPPATH\Views\pages\mitglieder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "projects"', 'APPPATH\\Views\\pages\\mitglieder.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(20): view('pages/mitglieder')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 09:03:20 --> Undefined array key "projects"
+in APPPATH\Views\pages\mitglieder.php on line 24.
+ 1 APPPATH\Views\pages\mitglieder.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "projects"', 'APPPATH\\Views\\pages\\mitglieder.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(20): view('pages/mitglieder')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:51:08 --> Undefined array key "project"
+in APPPATH\Views\pages\aufgaben.php on line 20.
+ 1 APPPATH\Views\pages\aufgaben.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Views\\pages\\aufgaben.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:56:37 --> Undefined array key "project"
+in APPPATH\Views\pages\aufgaben.php on line 20.
+ 1 APPPATH\Views\pages\aufgaben.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Views\\pages\\aufgaben.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:57:12 --> Undefined array key "project"
+in APPPATH\Views\pages\aufgaben.php on line 20.
+ 1 APPPATH\Views\pages\aufgaben.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Views\\pages\\aufgaben.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:57:18 --> Undefined array key "project"
+in APPPATH\Views\pages\aufgaben.php on line 20.
+ 1 APPPATH\Views\pages\aufgaben.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "project"', 'APPPATH\\Views\\pages\\aufgaben.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:57:38 --> Undefined array key "id_project"
+in APPPATH\Views\pages\aufgaben.php on line 20.
+ 1 APPPATH\Views\pages\aufgaben.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_project"', 'APPPATH\\Views\\pages\\aufgaben.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:57:55 --> Undefined array key "id_projekt"
+in APPPATH\Views\pages\aufgaben.php on line 20.
+ 1 APPPATH\Views\pages\aufgaben.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_projekt"', 'APPPATH\\Views\\pages\\aufgaben.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:59:05 --> Undefined array key "bezeichnung"
+in APPPATH\Views\pages\aufgaben.php on line 22.
+ 1 APPPATH\Views\pages\aufgaben.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "bezeichnung"', 'APPPATH\\Views\\pages\\aufgaben.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:59:15 --> Undefined array key "reiter"
+in APPPATH\Views\pages\aufgaben.php on line 24.
+ 1 APPPATH\Views\pages\aufgaben.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reiter"', 'APPPATH\\Views\\pages\\aufgaben.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:59:28 --> Undefined array key "person"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "person"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 10:59:36 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:02:57 --> Undefined array key 0
+in APPPATH\Views\pages\aufgaben.php on line 22.
+ 1 APPPATH\Views\pages\aufgaben.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\pages\\aufgaben.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:02:58 --> Undefined array key 0
+in APPPATH\Views\pages\aufgaben.php on line 22.
+ 1 APPPATH\Views\pages\aufgaben.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\pages\\aufgaben.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:06:43 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 31.
+ 1 APPPATH\Views\pages\aufgaben.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:06:44 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 31.
+ 1 APPPATH\Views\pages\aufgaben.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:06:45 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 31.
+ 1 APPPATH\Views\pages\aufgaben.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:07:11 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:07:12 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:07:13 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:07:37 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:07:38 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:08:03 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:11:43 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:11:44 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:18:17 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:18:18 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:18:19 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:18:19 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 25.
+ 1 APPPATH\Views\pages\aufgaben.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(23): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:20:24 --> Undefined array key "id_mitglieder"
+in APPPATH\Controllers\SessionController.php on line 84.
+ 1 APPPATH\Controllers\SessionController.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Controllers\\SessionController.php', 84)
+ 2 APPPATH\Controllers\Aufgaben.php(17): App\Controllers\SessionController->indexed_reiter()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:21:06 --> Undefined array key "name"
+in APPPATH\Views\pages\aufgaben.php on line 22.
+ 1 APPPATH\Views\pages\aufgaben.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\pages\\aufgaben.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:23:26 --> Call to undefined method App\Controllers\Aufgaben::aufgaben_mitglieder_COMPLETE()
+in APPPATH\Controllers\Aufgaben.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:24:12 --> Undefined array key "id"
+in APPPATH\Views\pages\aufgaben.php on line 28.
+ 1 APPPATH\Views\pages\aufgaben.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\pages\\aufgaben.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:24:31 --> Undefined array key "id_project"
+in APPPATH\Views\pages\aufgaben.php on line 67.
+ 1 APPPATH\Views\pages\aufgaben.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_project"', 'APPPATH\\Views\\pages\\aufgaben.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:24:50 --> Undefined array key "id_projekt"
+in APPPATH\Views\pages\aufgaben.php on line 67.
+ 1 APPPATH\Views\pages\aufgaben.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_projekt"', 'APPPATH\\Views\\pages\\aufgaben.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:24:51 --> Undefined array key "id_projekt"
+in APPPATH\Views\pages\aufgaben.php on line 67.
+ 1 APPPATH\Views\pages\aufgaben.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_projekt"', 'APPPATH\\Views\\pages\\aufgaben.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:25:40 --> Undefined array key "id"
+in APPPATH\Views\pages\aufgaben.php on line 68.
+ 1 APPPATH\Views\pages\aufgaben.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\pages\\aufgaben.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:25:49 --> Undefined array key "id"
+in APPPATH\Views\pages\aufgaben.php on line 68.
+ 1 APPPATH\Views\pages\aufgaben.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\pages\\aufgaben.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:25:50 --> Undefined array key "id"
+in APPPATH\Views\pages\aufgaben.php on line 68.
+ 1 APPPATH\Views\pages\aufgaben.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\pages\\aufgaben.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:25:56 --> Undefined array key "id_mitglieder"
+in APPPATH\Views\pages\aufgaben.php on line 68.
+ 1 APPPATH\Views\pages\aufgaben.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Views\\pages\\aufgaben.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 11:26:24 --> Undefined variable $DATA_mitglieder
+in APPPATH\Views\pages\aufgaben.php on line 76.
+ 1 APPPATH\Views\pages\aufgaben.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DATA_mitglieder', 'APPPATH\\Views\\pages\\aufgaben.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\aufgaben.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/aufgaben', [], true)
+ 5 APPPATH\Controllers\Aufgaben.php(22): view('pages/aufgaben')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-01 11:34:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id_mitglieder=1' at line 1 in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Views\pages\mitglieder.php(27): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\education\codeigniter\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\education\codeigniter\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\education\codeigniter\system\Common.php(1135): CodeIgniter\View\View->render('pages/mitgliede...', Array, true)
+#7 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(21): view('pages/mitgliede...')
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+#9 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#10 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\education\codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-01 11:34:02 --> Call to a member function getResultArray() on bool
+in APPPATH\Views\pages\mitglieder.php on line 28.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(21): view('pages/mitglieder')
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

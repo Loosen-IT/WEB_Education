@@ -13,6 +13,7 @@ class Mitglieder extends SessionController
         $data['CSS_bootstrap'] = base_url().'/codeigniter/public/styles/bootstrap.css';
         $data['CSS_custom'] = base_url().'/codeigniter/public/styles/custom.css';
         $data['DATA_mitglieder'] = $this->create_mitglieder();
+        $data['DATA_projekte_mitglieder'] = $this->create_projekte_mitglieder();
 
         echo view('templates/head.php', $data);
         echo view('templates/block.php');

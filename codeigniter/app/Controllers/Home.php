@@ -15,8 +15,7 @@ class Home extends SessionController
 
         $data['DATA_uebersicht'] = $this->create_uebersicht();
         $data['DATA_reiter'] = $this->create_reiter();
-        $data['DATA_mitglieder'] = $this->create_mitglieder();
-        $data['DATA_aufgaben'] = $this->create_aufgaben();
+        $data['DATA_aufgaben_mitglieder_COMPLETE'] = $this->create_aufgaben_mitglieder_COMPLETE();
 
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
