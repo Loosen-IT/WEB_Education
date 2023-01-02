@@ -76,18 +76,16 @@ class SessionController extends BaseController
 
 
     function create_projekte(){
-        $projekte = array(
-            'p1' => array(
-                'id' => 'p1',
-                'name' => 'Webentwicklung WS 22',
-                'beschreibung' => 'Wir bauen eine To-Do-Liste.'
-            ),
-            'p2' => array(
-                'id' => 'p2',
-                'name' => 'Kaffee-Trink AG',
-                'beschreibung' => 'Wir trinken gerne Kaffe.'
-            )
-        );
+        $db = db_connect();
+        $query = $db->query('SELECT * FROM projekte');
+        return $query->getResultArray();
+    }
+
+    public function indexed_projekte(){
+        $projekte = array();
+        foreach($this->create_projekte() as $projekt){
+            $projekte[$projekt['id_projekt']] = $projekt;
+        }
         return $projekte;
     }
 
