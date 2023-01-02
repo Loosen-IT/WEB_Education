@@ -10,7 +10,7 @@
             <?php
             foreach($DATA_projekte as $project) {
                 ?>
-                <option value="<?php echo $project['id']; ?>"><?php echo $project['name']; ?></option>
+                <option value="<?php echo $project['id_projekte']; ?>"><?php echo $project['name']; ?></option>
                 <?php
             }
             ?>

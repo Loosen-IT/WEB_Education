@@ -84,7 +84,7 @@ class SessionController extends BaseController
     public function indexed_projekte(){
         $projekte = array();
         foreach($this->create_projekte() as $projekt){
-            $projekte[$projekt['id_projekt']] = $projekt;
+            $projekte[$projekt['id_projekte']] = $projekt;
         }
         return $projekte;
     }
