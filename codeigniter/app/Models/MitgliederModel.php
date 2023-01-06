@@ -76,13 +76,13 @@ class MitgliederModel extends Model {
         IF ($aufgaben_id != NULL)
             $this->aufgaben_mitglieder->where('aufgaben_mitglieder.id_aufgaben', $aufgaben_id);
 
-        $this->aufgaben_mitglieder->orderBy('id_aufgaben');
-        $result = $this->aufgaben_mitglieder->get();
+        //$this->aufgaben_mitglieder->orderBy('id_aufgaben');
+        //$result = $this->aufgaben_mitglieder->get();
 
         if ($aufgaben_id != NULL)
-            return $result->getRowArray();
+            return $this->aufgaben_mitglieder->getRowArray();
         else
-            return $result->getResultArray();
+            return $this->aufgaben_mitglieder->getResultArray();
     }
 
     public function get_indexed_mitglieder(){

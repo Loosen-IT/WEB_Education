@@ -64,6 +64,22 @@ class ProjekteModel extends Model {
             return $result->getResultArray();
     }
 
+    public function getProjekte_Mitglieder_Join_M ($projekte_id = NULL) {
+
+        $this->pm_join_m = $this->db->query('SELECT * FROM mitglieder m INNER JOIN projekte_mitglieder pm ON m.id_mitglieder=pm.id_mitglieder ');
+
+        IF ($projekte_id != NULL)
+            $this->pm_join_m->where('projekte_mitglieder.id_projekte', $projekte_id);
+
+        //$this->aufgaben_mitglieder->orderBy('id_aufgaben');
+        //$result = $this->aufgaben_mitglieder->get();
+
+        if ($projekte_id != NULL)
+            return $this->pm_join_m->getRowArray();
+        else
+            return $this->pm_join_m->getResultArray();
+    }
+
     public function get_indexed_projekte(){
         $projekte = array();
         foreach($this->getProjekte() as $projekt){
