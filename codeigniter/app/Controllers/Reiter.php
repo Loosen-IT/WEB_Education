@@ -2,9 +2,14 @@
 
 namespace App\Controllers;
 use CodeIgniter\Controller;
+use App\Models\ReiterModel;
 
 class Reiter extends SessionController
 {
+    public function __construct(){
+        $this->ReiterModel = new ReiterModel();
+    }
+
     public function index()
     {
         $this->session_parameters();
@@ -12,7 +17,7 @@ class Reiter extends SessionController
         $data['INFO_title'] = "Aufgabenplaner: Reiter";
         $data['CSS_bootstrap'] = base_url().'/codeigniter/public/styles/bootstrap.css';
         $data['CSS_custom'] = base_url().'/codeigniter/public/styles/custom.css';
-        $data['DATA_reiter'] = $this->create_reiter();
+        $data['DATA_reiter'] = $this->ReiterModel->getReiter();
 
         echo view('templates/head.php', $data);
         echo view('templates/block.php');

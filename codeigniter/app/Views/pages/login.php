@@ -1,5 +1,8 @@
 <div class="container">
     <div class="row px-2">
+        <div class="col-2">
+
+        </div>
         <div class="col-8">
             <form>
                 <div class="mb-3">
