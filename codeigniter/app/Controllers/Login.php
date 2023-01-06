@@ -33,12 +33,17 @@ class Login extends SessionController
     }
 
     public function login(){
+        /*
         if($this->check_password()){
             $_SESSION['STATUS_logged'] = true;
             $_SESSION['DATA_user'] = $this->MitgliederModel->getMitglieder_MAIL($_POST['email']);
             if(!isset($_COOKIE['STATUS_project'])){ $_COOKIE['STATUS_project'] = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'][0]); }
             $_SESSION['STATUS_project'] = $_COOKIE['STATUS_project'];
-            redirect('home', 'refresh');
+            return redirect()->to(base_url('/home'));
+        } else {
+            redirect()->to(base_url('/login'));
         }
+        */
+        redirect()->to(base_url('/login'));
     }
 }

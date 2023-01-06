@@ -4,7 +4,7 @@
 
         </div>
         <div class="col-8">
-            <form>
+            <?php echo  form_open('login/login', array('role' => 'form')); ?>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email-Addresse</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email-Adresse eingeben">

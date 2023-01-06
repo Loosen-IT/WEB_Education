@@ -18,7 +18,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Login');
-$routes->setDefaultMethod('index');
+$routes->setDefaultMethod('');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
@@ -37,11 +37,18 @@ $routes->setAutoRoute(false);
 // route since we don't have to scan directories.
 $routes->get('/', 'Login::index');
 $routes->get('/login', 'Login::index');
+$routes->get('/login/login', 'Login::login');
+
 $routes->get('/home', 'Home::index');
+
 $routes->get('/aufgaben', 'Aufgaben::index');
+
 $routes->get('/mitglieder', 'Mitglieder::index');
+
 $routes->get('/reiter', 'Reiter::index');
+
 $routes->get('/projekte', 'Projekte::index');
+
 $routes->get('/debug', 'Debugging::index');
 /*
  * --------------------------------------------------------------------

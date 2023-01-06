@@ -15,7 +15,9 @@ class Mitglieder extends SessionController
 
     public function index()
     {
-        if (!$_SESSION['logged']) redirect('/login', 'refresh');
+        $this->session_parameters();
+
+        if (!$_SESSION['logged']) return redirect()->to(base_url('/login'));
 
         $data['INFO_title'] = "Aufgabenplaner: Mitglieder";
         $data['CSS_bootstrap'] = base_url().'/styles/bootstrap.css';

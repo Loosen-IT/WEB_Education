@@ -14,7 +14,7 @@ class Projekte extends SessionController
     {
         $this->session_parameters();
 
-        if (!$_SESSION['logged']) redirect('/login', 'refresh');
+        if (!$_SESSION['logged']) return redirect()->to(base_url('/login'));
 
         $data['INFO_title'] = "Aufgabenplaner: Projekte";
 
