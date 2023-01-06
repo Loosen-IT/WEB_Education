@@ -1,4 +1,4 @@
 <?php
-var_dump($debug);
+echo password_hash('lukas',PASSWORD_DEFAULT);
 ?>
 

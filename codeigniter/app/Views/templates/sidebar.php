@@ -1,22 +1,22 @@
 <ul class="list-group container">
     <li class="list-group-item">
-        <a href="<?= base_url('/codeigniter/public/Login') ?>">Login</a>
+        <a href="<?= base_url('/login') ?>">Login</a>
     </li>
     <li class="list-group-item">
-        <a href="<?= base_url('/codeigniter/public/Projekte') ?>">Projekte</a>
+        <a href="<?= base_url('/projekte') ?>">Projekte</a>
     </li>
     <li class="list-group-item">
-        <a href="<?= base_url('/codeigniter/public/Home') ?>">Aktuelles Projekt</a>
+        <a href="<?= base_url('/home') ?>">Aktuelles Projekt</a>
     </li>
     <ul>
         <li class="list-group-item">
-            <a href="<?= base_url('/codeigniter/public/Reiter') ?>">Reiter</a>
+            <a href="<?= base_url('/reiter') ?>">Reiter</a>
         </li>
         <li class="list-group-item">
-            <a href="<?= base_url('/codeigniter/public/Aufgaben') ?>">Aufgaben</a>
+            <a href="<?= base_url('/aufgaben') ?>">Aufgaben</a>
         </li>
         <li class="list-group-item">
-            <a href="<?= base_url('/codeigniter/public/Mitglieder') ?>">Mitglieder</a>
+            <a href="<?= base_url('/mitglieder') ?>">Mitglieder</a>
         </li>
     </ul>
 </ul>

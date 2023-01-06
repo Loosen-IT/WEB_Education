@@ -24,7 +24,7 @@
                     Noch nicht registriert? <a href="register.html"> Registrierung</a>
                     <br>
                     <br>
-                    Da der Login-Vorgang technisch noch nicht realisiert wurde: <a href="<?= base_url('codeigniter/public/Home') ?>"> Überspringen</a>
+                    Da der Login-Vorgang technisch noch nicht realisiert wurde: <a href="<?= base_url('/home') ?>"> Überspringen</a>
                 </div>
             </form>
         </div>
