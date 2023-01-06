@@ -2,9 +2,17 @@
 
 namespace App\Controllers;
 use CodeIgniter\Controller;
+use App\Models\MitgliederModel;
+use App\Models\AufgabenModel;
+use App\Models\ReiterModel;
 
 class Aufgaben extends SessionController
 {
+    public function __construct(){
+        $this->MitgliederModel = new MitgliederModel();
+        $this->AufgabenModel = new AufgabenModel();
+        $this->ReiterModel = new ReiterModel();
+    }
     public function index()
     {
         $this->session_parameters();
@@ -15,9 +23,9 @@ class Aufgaben extends SessionController
         $data['CSS_bootstrap'] = base_url().'/styles/bootstrap.css';
         $data['CSS_custom'] = base_url().'/styles/custom.css';
 
-        $data['DATA_aufgaben_mitglieder'] = $this->create_aufgaben_mitglieder_COMPLETE();
-        $data['DATA_reiter'] = $this->indexed_reiter();
-        $data['DATA_mitglieder'] = $this->indexed_mitglieder();
+        $data['DATA_aufgaben_mitglieder'] = $this->AufgabenModel->getAufgaben_Mitglieder();
+        $data['DATA_reiter'] = $this->ReiterModel->get_indexed_reiter();
+        $data['DATA_mitglieder'] = $this->MitgliederModel->get_indexed_mitglieder();
 
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
