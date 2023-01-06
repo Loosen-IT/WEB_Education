@@ -4,7 +4,7 @@
 
         </div>
         <div class="col-8">
-            <form method="post" action="<?php echo "http://localhost/education/codeigniter/public/login/login"?>">
+            <form method="post" action="<?php echo base_url('/login/login');?>">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email-Addresse</label>
                     <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email-Adresse eingeben">

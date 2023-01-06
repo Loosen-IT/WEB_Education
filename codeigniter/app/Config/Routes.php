@@ -18,7 +18,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Login');
-$routes->setDefaultMethod('');
+$routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
@@ -39,6 +39,8 @@ $routes->get('/', 'Login::index');
 $routes->get('/login', 'Login::index');
 $routes->post('/login', 'Login::index');
 $routes->post('/login/login', 'Login::login');
+$routes->get('/login/logout', 'Login::logout');
+$routes->post('/login/logout', 'Login::logout');
 
 $routes->get('/home', 'Home::index');
 $routes->post('/home', 'Home::index');

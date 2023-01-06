@@ -35,7 +35,7 @@ class Home extends SessionController
     {
         $this->session_parameters();
 
-        if (isset($_SESSION['STATUS_logged']) && !$_SESSION['STATUS_logged']) return redirect()->to(base_url('/login'));
+        if (!$_SESSION["STATUS_logged"]) return redirect()->to(base_url('login/logout'));
 
         $data['INFO_title'] = "Aufgabenplaner: Aktuelles Projekt";
         $data['CSS_bootstrap'] = base_url('/styles/').'/bootstrap.css';
@@ -48,7 +48,6 @@ class Home extends SessionController
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 
-        echo view('pages/uebersicht', $data);
-        return view('templates/footer.php');
+        return view('pages/uebersicht', $data);
     }
 }

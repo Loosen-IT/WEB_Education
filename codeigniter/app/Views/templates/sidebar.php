@@ -1,6 +1,6 @@
 <ul class="list-group container">
     <li class="list-group-item">
-        <a href="<?= base_url('/login') ?>">Login</a>
+        <a href="<?php echo base_url('/login/logout');?>">Ausloggen</a>
     </li>
     <li class="list-group-item">
         <a href="<?= base_url('/projekte') ?>">Projekte</a>

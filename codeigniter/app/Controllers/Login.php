@@ -23,11 +23,12 @@ class Login extends SessionController
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 
-        echo view('pages/login');
+        return view('pages/login');
     }
 
     public function check_password(){
         $password = $this->MitgliederModel->loginMitglieder();
+        if(!isset($password)) return false;
         if(password_verify($_POST['passwort'], $password['passwort'])) return true;
         else return false;
     }
@@ -42,5 +43,12 @@ class Login extends SessionController
         } else {
             return redirect()->to(base_url('/login'));
         }
+    }
+
+    public function logout(){
+        $_SESSION['STATUS_project'] = NULL;
+        $_SESSION['STATUS_logged'] = false;
+        $_SESSION['DATA_user'] = NULL;
+        return redirect()->to(base_url('/login'));
     }
 }

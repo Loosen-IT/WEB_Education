@@ -16,7 +16,7 @@ class Cookie extends BaseConfig
      *
      * @var string
      */
-    public $prefix = 'EDUCATION_';
+    public $prefix = '';
 
     /**
      * --------------------------------------------------------------------------
@@ -51,7 +51,7 @@ class Cookie extends BaseConfig
      *
      * @var string
      */
-    public $domain = 'education.loosen-it.de';
+    public $domain = '';
 
     /**
      * --------------------------------------------------------------------------

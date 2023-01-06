@@ -8,3 +8,12 @@
     border-radius:0.5rem;
     border-width:0.1rem;
 }
+
+footer {
+    position: fixed;
+    padding: 1rem 1rem 1rem 1rem;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+}
