@@ -26,12 +26,12 @@ class MitgliederModel extends Model {
         $this->mitglieder->select('*');
 
         IF ($mitglieder_mail != NULL)
-            $this->mitglieder->where('mitglieder.email', $mitglieder_email);
+            $this->mitglieder->where('mitglieder.email', $mitglieder_mail);
 
         $this->mitglieder->orderBy('username');
         $result = $this->mitglieder->get();
 
-        if ($mitglieder_email != NULL)
+        if ($mitglieder_mail != NULL)
             return $result->getRowArray();
         else
             return $result->getResultArray();
@@ -56,16 +56,15 @@ class MitgliederModel extends Model {
 
     public function deleteMitglieder() {
         $this->mitglieder = $this->db->table('mitglieder');
-        $this->mitglieder->where('mitglieder.username', $_POST['username']);
+        $this->mitglieder->where('mitglieder.id_mitglieder', $_POST['id_mitglieder']);
         $this->mitglieder->delete();
     }
 
     public function loginMitglieder() {
         $this->mitglieder = $this->db->table('mitglieder');
         $this->mitglieder->select('passwort');
-        $this->mitglieder->where('mitglieder.username', $_POST['username']);
+        $this->mitglieder->where('mitglieder.email', $_POST['email']);
         $result = $this->mitglieder->get();
-
         return $result->getRowArray();
     }
 

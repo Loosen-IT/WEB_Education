@@ -37,19 +37,26 @@ $routes->setAutoRoute(false);
 // route since we don't have to scan directories.
 $routes->get('/', 'Login::index');
 $routes->get('/login', 'Login::index');
-$routes->get('/login/login', 'Login::login');
+$routes->post('/login', 'Login::index');
+$routes->post('/login/login', 'Login::login');
 
 $routes->get('/home', 'Home::index');
+$routes->post('/home', 'Home::index');
 
 $routes->get('/aufgaben', 'Aufgaben::index');
+$routes->post('/aufgaben', 'Aufgaben::index');
 
 $routes->get('/mitglieder', 'Mitglieder::index');
+$routes->post('/mitglieder', 'Mitglieder::index');
 
 $routes->get('/reiter', 'Reiter::index');
+$routes->post('/reiter', 'Reiter::index');
 
 $routes->get('/projekte', 'Projekte::index');
+$routes->post('/projekte', 'Projekte::index');
 
 $routes->get('/debug', 'Debugging::index');
+$routes->post('/debug', 'Debugging::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

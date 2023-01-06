@@ -27,13 +27,12 @@ class Login extends SessionController
     }
 
     public function check_password(){
-        $password = $this->MitgliederModel->loginMitglied();
-        if(password_verify($_POST['password'], $password[0]['passwort'])) return true;
+        $password = $this->MitgliederModel->loginMitglieder();
+        if(password_verify($_POST['passwort'], $password['passwort'])) return true;
         else return false;
     }
 
     public function login(){
-        /*
         if($this->check_password()){
             $_SESSION['STATUS_logged'] = true;
             $_SESSION['DATA_user'] = $this->MitgliederModel->getMitglieder_MAIL($_POST['email']);
@@ -41,9 +40,7 @@ class Login extends SessionController
             $_SESSION['STATUS_project'] = $_COOKIE['STATUS_project'];
             return redirect()->to(base_url('/home'));
         } else {
-            redirect()->to(base_url('/login'));
+            return redirect()->to(base_url('/login'));
         }
-        */
-        redirect()->to(base_url('/login'));
     }
 }

@@ -14,7 +14,7 @@ class Projekte extends SessionController
     {
         $this->session_parameters();
 
-        if (!$_SESSION['logged']) return redirect()->to(base_url('/login'));
+        if (isset($_SESSION['STATUS_logged']) && !$_SESSION['STATUS_logged']) return redirect()->to(base_url('/login'));
 
         $data['INFO_title'] = "Aufgabenplaner: Projekte";
 
@@ -25,6 +25,7 @@ class Projekte extends SessionController
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 
-        return view('pages/projekte');
+        echo view('pages/projekte');
+        return view('templates/footer.php');
     }
 }

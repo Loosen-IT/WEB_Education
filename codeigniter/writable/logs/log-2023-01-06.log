@@ -677,3 +677,149 @@ in SYSTEMPATH\Database\BaseConnection.php on line 845.
  6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
  7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:56:31 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(30): CodeIgniter\Model->__call('loginMitglied', [])
+ 4 APPPATH\Controllers\Login.php(36): App\Controllers\Login->check_password()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:56:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(30): CodeIgniter\Model->__call('loginMitglied', [])
+ 4 APPPATH\Controllers\Login.php(36): App\Controllers\Login->check_password()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:00:27 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(30): CodeIgniter\Model->__call('loginMitglied', [])
+ 4 APPPATH\Controllers\Login.php(36): App\Controllers\Login->check_password()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:01:19 --> Undefined array key "username"
+in APPPATH\Models\MitgliederModel.php on line 66.
+ 1 APPPATH\Models\MitgliederModel.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Models\\MitgliederModel.php', 66)
+ 2 APPPATH\Controllers\Login.php(30): App\Models\MitgliederModel->loginMitglieder()
+ 3 APPPATH\Controllers\Login.php(36): App\Controllers\Login->check_password()
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:02:44 --> Undefined array key "email"
+in APPPATH\Models\MitgliederModel.php on line 66.
+ 1 APPPATH\Models\MitgliederModel.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Models\\MitgliederModel.php', 66)
+ 2 APPPATH\Controllers\Login.php(30): App\Models\MitgliederModel->loginMitglieder()
+ 3 APPPATH\Controllers\Login.php(36): App\Controllers\Login->check_password()
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:03:54 --> Undefined array key "password"
+in APPPATH\Controllers\Login.php on line 31.
+ 1 APPPATH\Controllers\Login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'APPPATH\\Controllers\\Login.php', 31)
+ 2 APPPATH\Controllers\Login.php(36): App\Controllers\Login->check_password()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:04:12 --> Undefined array key 0
+in APPPATH\Controllers\Login.php on line 31.
+ 1 APPPATH\Controllers\Login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Login.php', 31)
+ 2 APPPATH\Controllers\Login.php(36): App\Controllers\Login->check_password()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:04:33 --> Undefined variable $mitglieder_email
+in APPPATH\Models\MitgliederModel.php on line 29.
+ 1 APPPATH\Models\MitgliederModel.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mitglieder_email', 'APPPATH\\Models\\MitgliederModel.php', 29)
+ 2 APPPATH\Controllers\Login.php(38): App\Models\MitgliederModel->getMitglieder_MAIL('s4jaloos@uni-trier.de')
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:08:07 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Home.php on line 38.
+ 1 APPPATH\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Home.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:11:53 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Home.php on line 38.
+ 1 APPPATH\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Home.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:12:25 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Reiter.php on line 17.
+ 1 APPPATH\Controllers\Reiter.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Reiter.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:13:28 --> Call to undefined method App\Controllers\Reiter::create_reiter()
+in APPPATH\Controllers\Reiter.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:13:30 --> Call to undefined method App\Controllers\Reiter::create_reiter()
+in APPPATH\Controllers\Reiter.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:13:31 --> Call to undefined method App\Controllers\Reiter::create_reiter()
+in APPPATH\Controllers\Reiter.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:13:31 --> Call to undefined method App\Controllers\Reiter::create_reiter()
+in APPPATH\Controllers\Reiter.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:13:31 --> Call to undefined method App\Controllers\Reiter::create_reiter()
+in APPPATH\Controllers\Reiter.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:13:46 --> Undefined variable $DATA_reiter
+in APPPATH\Views\pages\reiter.php on line 17.
+ 1 APPPATH\Views\pages\reiter.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DATA_reiter', 'APPPATH\\Views\\pages\\reiter.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\reiter.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/reiter', [], true)
+ 5 APPPATH\Controllers\Reiter.php(28): view('pages/reiter')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:13:51 --> Call to undefined method App\Controllers\Projekte::create_projekte()
+in APPPATH\Controllers\Projekte.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 07:15:53 --> Call to undefined method App\Controllers\Projekte::create_projekte()
+in APPPATH\Controllers\Projekte.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

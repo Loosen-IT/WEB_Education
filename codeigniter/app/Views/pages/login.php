@@ -4,20 +4,20 @@
 
         </div>
         <div class="col-8">
-            <?php echo  form_open('login/login', array('role' => 'form')); ?>
+            <form method="post" action="<?php echo "http://localhost/education/codeigniter/public/login/login"?>">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email-Addresse</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email-Adresse eingeben">
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email-Adresse eingeben">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Passwort</label>
-                    <input type="password" placeholder="Passwort" class="form-control" id="exampleInputPassword1">
+                    <input name="passwort" type="password" placeholder="Passwort" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">AGBs und Datenschutzbedingungen akzeptieren</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Einloggen</button>
+                <button name="ok" type="submit" class="btn btn-primary">Einloggen</button>
                 <br>
                 <br>
                 <div class="mb-3">

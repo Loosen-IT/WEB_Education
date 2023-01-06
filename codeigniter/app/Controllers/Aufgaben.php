@@ -17,7 +17,7 @@ class Aufgaben extends SessionController
     {
         $this->session_parameters();
 
-        if (!$_SESSION['logged']) return redirect()->to(base_url('/login'));
+        if (isset($_SESSION['STATUS_logged']) && !$_SESSION['STATUS_logged']) return redirect()->to(base_url('/login'));
 
         $data['INFO_title'] = "Aufgabenplaner: Aufgaben";
         $data['CSS_bootstrap'] = base_url().'/styles/bootstrap.css';
@@ -30,6 +30,7 @@ class Aufgaben extends SessionController
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 
-        return view('pages/aufgaben');
+        echo view('pages/aufgaben');
+        return view('templates/footer.php');
     }
 }

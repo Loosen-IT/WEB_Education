@@ -14,7 +14,7 @@ class Reiter extends SessionController
     {
         $this->session_parameters();
 
-        if (!$_SESSION['logged']) return redirect()->to(base_url('/login'));
+        if (isset($_SESSION['STATUS_logged']) && !$_SESSION['STATUS_logged']) return redirect()->to(base_url('/login'));
 
         $data['INFO_title'] = "Aufgabenplaner: Reiter";
 
@@ -25,6 +25,7 @@ class Reiter extends SessionController
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 
-        return view('pages/reiter');
+        echo view('pages/reiter');
+        return view('templates/footer.php');
     }
 }
