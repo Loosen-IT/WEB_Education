@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\ProjekteModel;
 use CodeIgniter\Controller;
 use App\Models\MitgliederModel;
 
@@ -8,6 +9,7 @@ class Login extends SessionController
 {
     public function __construct(){
         $this->MitgliederModel = new MitgliederModel();
+        $this->ProjekteModel = new ProjekteModel();
     }
 
     public function index()
@@ -32,7 +34,10 @@ class Login extends SessionController
 
     public function login(){
         if($this->check_password()){
-            $this->session_parameters(NULL ,$_POST['username'],true);
+            $_SESSION['STATUS_logged'] = true;
+            $_SESSION['DATA_user'] = $this->MitgliederModel->getMitglieder_MAIL($_POST['email']);
+            if(!isset($_COOKIE['STATUS_project'])){ $_COOKIE['STATUS_project'] = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'][0]); }
+            $_SESSION['STATUS_project'] = $_COOKIE['STATUS_project'];
             redirect('home', 'refresh');
         }
     }

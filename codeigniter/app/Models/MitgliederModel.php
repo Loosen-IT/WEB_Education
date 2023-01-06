@@ -5,17 +5,33 @@ use CodeIgniter\Model;
 class MitgliederModel extends Model {
 
 
-    public function getMitglieder ($mitglieder_id = NULL) {
+    public function getMitglieder ($mitglieder_username = NULL) {
         $this->mitglieder = $this->db->table('mitglieder');
         $this->mitglieder->select('*');
 
-        IF ($mitglieder_id != NULL)
-            $this->mitglieder->where('mitglieder.id_mitglieder', $mitglieder_id);
+        IF ($mitglieder_username != NULL)
+            $this->mitglieder->where('mitglieder.username', $mitglieder_username);
 
         $this->mitglieder->orderBy('username');
         $result = $this->mitglieder->get();
 
-        if ($mitglieder_id != NULL)
+        if ($mitglieder_username != NULL)
+            return $result->getRowArray();
+        else
+            return $result->getResultArray();
+    }
+
+    public function getMitglieder_MAIL ($mitglieder_mail = NULL) {
+        $this->mitglieder = $this->db->table('mitglieder');
+        $this->mitglieder->select('*');
+
+        IF ($mitglieder_mail != NULL)
+            $this->mitglieder->where('mitglieder.email', $mitglieder_email);
+
+        $this->mitglieder->orderBy('username');
+        $result = $this->mitglieder->get();
+
+        if ($mitglieder_email != NULL)
             return $result->getRowArray();
         else
             return $result->getResultArray();

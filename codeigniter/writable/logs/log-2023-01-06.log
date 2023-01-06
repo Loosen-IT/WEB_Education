@@ -124,3 +124,116 @@ in APPPATH\Views\pages\debugging.php on line 2.
  7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Debugging))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:15:40 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 APPPATH\Controllers\SessionController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\SessionController.php', 8)
+ 2 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:16:47 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:35 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:35 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:35 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:36 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:36 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:36 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:36 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:36 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:36 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:37 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:37 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:37 --> Cannot call constructor
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:43 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 APPPATH\Controllers\SessionController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\SessionController.php', 8)
+ 2 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:44 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 APPPATH\Controllers\SessionController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\SessionController.php', 8)
+ 2 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:44 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 APPPATH\Controllers\SessionController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\SessionController.php', 8)
+ 2 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 05:19:44 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\SessionController.php on line 8.
+ 1 APPPATH\Controllers\SessionController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\SessionController.php', 8)
+ 2 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\SessionController->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
