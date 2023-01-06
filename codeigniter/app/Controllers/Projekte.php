@@ -20,7 +20,7 @@ class Projekte extends SessionController
 
         $data['CSS_bootstrap'] = base_url().'/styles/bootstrap.css';
         $data['CSS_custom'] = base_url().'/styles/custom.css';
-        $data['DATA_projekte'] = $this->create_projekte();
+        $data['DATA_projekte'] = $this->ProjekteModel->getProjekte();
 
         echo view('templates/head.php', $data);
         echo view('templates/block.php');

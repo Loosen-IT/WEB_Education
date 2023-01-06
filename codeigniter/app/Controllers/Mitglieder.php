@@ -31,4 +31,26 @@ class Mitglieder extends SessionController
         echo view('pages/mitglieder');
         return view('templates/footer.php');
     }
+
+    public function mitglieder_create(){
+        echo('<pre>');
+        var_dump($_POST);
+        echo('</pre>');
+        //die();
+
+        if(isset($_POST['id_mitglieder']) && $_POST['id'] != ''){
+            $this->MitgliederModel->updateMitglieder();
+        }
+        else{
+            $this->MitgliederModel->createMitglieder();
+        }
+        return redirect()->to(base_url('mitglieder'));
+    }
+
+    public function mitglieder_delete(){
+        if(isset($_POST['id_mitglieder']) && $_POST['id'] != ''){
+            $this->MitgliederModel->deleteMitglieder();
+        }
+    }
+
 }
