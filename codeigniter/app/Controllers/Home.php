@@ -35,6 +35,8 @@ class Home extends SessionController
     {
         $this->session_parameters();
 
+        if(!isset($_SESSION['STATUS_logged'])) return var_dump($_SESSION);
+
         if (!$_SESSION["STATUS_logged"]) return redirect()->to(base_url('login/logout'));
 
         $data['INFO_title'] = "Aufgabenplaner: Aktuelles Projekt";

@@ -37,7 +37,9 @@ class Login extends SessionController
         if($this->check_password()){
             $_SESSION['STATUS_logged'] = true;
             $_SESSION['DATA_user'] = $this->MitgliederModel->getMitglieder_MAIL($_POST['email']);
-            if(!isset($_COOKIE['STATUS_project'])){ $_COOKIE['STATUS_project'] = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'][0]); }
+            if(!isset($_COOKIE['STATUS_project'])){
+                setcookie('STATUS_project',$_COOKIE['STATUS_project'] = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'])['id_projekte']);
+            }
             $_SESSION['STATUS_project'] = $_COOKIE['STATUS_project'];
             return redirect()->to(base_url('/home'));
         } else {

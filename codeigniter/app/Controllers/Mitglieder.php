@@ -30,4 +30,26 @@ class Mitglieder extends SessionController
 
         return view('pages/mitglieder');
     }
+
+    public function stop(){
+        $this->session_parameters();
+
+        if (!$_SESSION["STATUS_logged"]) return redirect()->to(base_url('login/logout'));
+
+        $data['INFO_title'] = "Aufgabenplaner: Mitglied Löschen";
+
+        $data['CSS_bootstrap'] = base_url().'/styles/bootstrap.css';
+        $data['CSS_custom'] = base_url().'/styles/custom.css';
+
+        echo view('templates/head.php', $data);
+    }
+
+    public function delete(){
+        $this->MitgliederModel->deleteMitglieder();
+        return redirect()->to(base_url('/mitglieder'));
+    }
+
+    public function update(){
+
+    }
 }

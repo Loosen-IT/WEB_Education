@@ -40,7 +40,6 @@ $routes->get('/login', 'Login::index');
 $routes->post('/login', 'Login::index');
 $routes->post('/login/login', 'Login::login');
 $routes->get('/login/logout', 'Login::logout');
-$routes->post('/login/logout', 'Login::logout');
 
 $routes->get('/home', 'Home::index');
 $routes->post('/home', 'Home::index');
@@ -50,6 +49,8 @@ $routes->post('/aufgaben', 'Aufgaben::index');
 
 $routes->get('/mitglieder', 'Mitglieder::index');
 $routes->post('/mitglieder', 'Mitglieder::index');
+$routes->post('/mitglieder/delete', 'Mitglieder::delete');
+$routes->post('/mitglieder/update', 'Mitglieder::update');
 
 $routes->get('/reiter', 'Reiter::index');
 $routes->post('/reiter', 'Reiter::index');

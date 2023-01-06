@@ -1233,3 +1233,316 @@ in APPPATH\Controllers\Projekte.php on line 23.
  2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
  3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:42:15 --> Call to undefined method App\Controllers\Reiter::create_reiter()
+in APPPATH\Controllers\Reiter.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:42:19 --> Call to undefined method App\Controllers\Projekte::create_projekte()
+in APPPATH\Controllers\Projekte.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:42:24 --> Call to undefined method App\Controllers\Projekte::create_projekte()
+in APPPATH\Controllers\Projekte.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:42:36 --> Call to undefined method App\Controllers\Reiter::create_reiter()
+in APPPATH\Controllers\Reiter.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Reiter->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reiter))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-06 08:43:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND id_mitglieder=3' at line 1 in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\education\codeigniter\app\Views\pages\mitglieder.php(27): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\education\codeigniter\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\education\codeigniter\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\education\codeigniter\system\Common.php(1135): CodeIgniter\View\View->render('pages/mitgliede...', Array, true)
+#7 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(31): view('pages/mitgliede...')
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+#9 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#10 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-06 08:43:25 --> Call to a member function getResultArray() on bool
+in APPPATH\Views\pages\mitglieder.php on line 28.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 4 APPPATH\Controllers\Mitglieder.php(31): view('pages/mitglieder')
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:45:05 --> Array to string conversion
+in APPPATH\Views\pages\mitglieder.php on line 27.
+ 1 APPPATH\Views\pages\mitglieder.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\pages\\mitglieder.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(31): view('pages/mitglieder')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:46:17 --> Array to string conversion
+in APPPATH\Views\pages\mitglieder.php on line 27.
+ 1 APPPATH\Views\pages\mitglieder.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\pages\\mitglieder.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(31): view('pages/mitglieder')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:46:18 --> Array to string conversion
+in APPPATH\Views\pages\mitglieder.php on line 27.
+ 1 APPPATH\Views\pages\mitglieder.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\pages\\mitglieder.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(31): view('pages/mitglieder')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:46:19 --> Array to string conversion
+in APPPATH\Views\pages\mitglieder.php on line 27.
+ 1 APPPATH\Views\pages\mitglieder.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\pages\\mitglieder.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(31): view('pages/mitglieder')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:46:55 --> Array to string conversion
+in APPPATH\Views\pages\mitglieder.php on line 27.
+ 1 APPPATH\Views\pages\mitglieder.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\pages\\mitglieder.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(31): view('pages/mitglieder')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:46:55 --> Array to string conversion
+in APPPATH\Views\pages\mitglieder.php on line 27.
+ 1 APPPATH\Views\pages\mitglieder.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\pages\\mitglieder.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\mitglieder.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/mitglieder', [], true)
+ 5 APPPATH\Controllers\Mitglieder.php(31): view('pages/mitglieder')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:47:37 --> Undefined array key 0
+in APPPATH\Controllers\Login.php on line 42.
+ 1 APPPATH\Controllers\Login.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Login.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:48:02 --> Array to string conversion
+in APPPATH\Controllers\Login.php on line 26.
+ 1 APPPATH\Controllers\Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Login.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:50:23 --> Call to undefined function App\Controllers\set_cookie()
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:50:46 --> setcookie(): Argument #2 ($value) must be of type string, array given
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): setcookie('STATUS_project', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:51:08 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Login.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:52:26 --> Undefined array key 0
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 08:55:33 --> Call to undefined method App\Controllers\Projekte::create_projekte()
+in APPPATH\Controllers\Projekte.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:30:29 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Home.php on line 38.
+ 1 APPPATH\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Home.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:30:51 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Home.php on line 38.
+ 1 APPPATH\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Home.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:31:30 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Home.php on line 38.
+ 1 APPPATH\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Home.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:31:31 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Home.php on line 38.
+ 1 APPPATH\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Home.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:31:31 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Home.php on line 38.
+ 1 APPPATH\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Home.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:31:31 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Home.php on line 38.
+ 1 APPPATH\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Home.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:32:44 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Home.php on line 38.
+ 1 APPPATH\Controllers\Home.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Home.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 12:25:20 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Mitglieder.php on line 20.
+ 1 APPPATH\Controllers\Mitglieder.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Mitglieder.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 12:26:05 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Mitglieder.php on line 20.
+ 1 APPPATH\Controllers\Mitglieder.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Mitglieder.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 12:26:06 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Mitglieder.php on line 20.
+ 1 APPPATH\Controllers\Mitglieder.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Mitglieder.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 12:26:07 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Mitglieder.php on line 20.
+ 1 APPPATH\Controllers\Mitglieder.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Mitglieder.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 12:26:07 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Mitglieder.php on line 20.
+ 1 APPPATH\Controllers\Mitglieder.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Mitglieder.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 12:37:29 --> Undefined array key "id_mitglieder"
+in APPPATH\Models\MitgliederModel.php on line 59.
+ 1 APPPATH\Models\MitgliederModel.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mitglieder"', 'APPPATH\\Models\\MitgliederModel.php', 59)
+ 2 APPPATH\Controllers\Mitglieder.php(48): App\Models\MitgliederModel->deleteMitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 13:17:54 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Mitglieder.php on line 20.
+ 1 APPPATH\Controllers\Mitglieder.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Mitglieder.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 13:17:57 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Mitglieder.php on line 20.
+ 1 APPPATH\Controllers\Mitglieder.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Mitglieder.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 13:34:04 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Mitglieder.php on line 20.
+ 1 APPPATH\Controllers\Mitglieder.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Mitglieder.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-06 13:42:48 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`education`.`projekte`, CONSTRAINT `ersteller_projekte` FOREIGN KEY (`id_ersteller`) REFERENCES `mitglieder` (`id_mitglieder`)) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\MitgliederModel.php(60): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(48): App\Models\MitgliederModel->deleteMitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->delete()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-01-06 13:45:57 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`education`.`projekte`, CONSTRAINT `ersteller_projekte` FOREIGN KEY (`id_ersteller`) REFERENCES `mitglieder` (`id_mitglieder`)) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\MitgliederModel.php(60): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(48): App\Models\MitgliederModel->deleteMitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->delete()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-01-06 13:46:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`education`.`projekte`, CONSTRAINT `ersteller_projekte` FOREIGN KEY (`id_ersteller`) REFERENCES `mitglieder` (`id_mitglieder`)) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `mi...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mi...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mi...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mi...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\MitgliederModel.php(60): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(48): App\Models\MitgliederModel->deleteMitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->delete()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}

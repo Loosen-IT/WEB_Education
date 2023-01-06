@@ -1,6 +1,8 @@
 .table-button {
     background-color: #ffffff;
-    border: none;
+    border: solid #ffffff;
+    border-radius:0.5rem;
+    border-width:0.1rem;
 }
 
 .table-button:hover{
