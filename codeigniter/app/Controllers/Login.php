@@ -19,6 +19,6 @@ class Login extends SessionController
     }
 
     public function check_password(){
-
+        
     }
 }
