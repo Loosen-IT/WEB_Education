@@ -7,7 +7,7 @@ class Aufgaben extends SessionController
 {
     public function index()
     {
-        $this->session_parameters();
+        if ($_SESSION['logged']) redirect('/login', 'refresh');
 
         $data['INFO_title'] = "Aufgabenplaner: Aufgaben";
         $data['CSS_bootstrap'] = base_url().'/codeigniter/public/styles/bootstrap.css';

@@ -16,4 +16,8 @@ class Login extends SessionController
 
         echo view('pages/login');
     }
+
+    public function set_password(){
+
+    }
 }
