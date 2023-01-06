@@ -42,6 +42,7 @@ $routes->get('/aufgaben', 'Aufgaben::index');
 $routes->get('/mitglieder', 'Mitglieder::index');
 $routes->get('/reiter', 'Reiter::index');
 $routes->get('/projekte', 'Projekte::index');
+$routes->get('/debug', 'Debugging::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

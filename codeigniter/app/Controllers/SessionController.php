@@ -5,7 +5,7 @@ namespace App\Controllers;
 class SessionController extends BaseController
 {
     //Temporaere Loesung um aktuelles Projekt zu speichern
-    public function session_parameters($project, $user, $logged){
+    public function session_parameters(){
         if(!isset($_SESSION['project'])) $_SESSION['project'] = "1";
         if(!isset($_SESSION['logged'])) $_SESSION['logged'] = false;
         if(!isset($_SESSION['user'])) $_SESSION['user'] = NULL;

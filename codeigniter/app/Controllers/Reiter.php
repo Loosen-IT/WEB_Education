@@ -7,11 +7,13 @@ class Reiter extends SessionController
 {
     public function index()
     {
-        if ($_SESSION['logged']) redirect('/login', 'refresh');
+        $this->session_parameters();
+
+        if (!$_SESSION['logged']) redirect('/login', 'refresh');
 
         $data['INFO_title'] = "Aufgabenplaner: Reiter";
-        $data['CSS_bootstrap'] = base_url().'/codeigniter/public/styles/bootstrap.css';
-        $data['CSS_custom'] = base_url().'/codeigniter/public/styles/custom.css';
+        $data['CSS_bootstrap'] = base_url().'/styles/bootstrap.css';
+        $data['CSS_custom'] = base_url().'/styles/custom.css';
         $data['DATA_reiter'] = $this->create_reiter();
 
         echo view('templates/head.php', $data);

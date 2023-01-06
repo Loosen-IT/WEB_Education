@@ -7,11 +7,13 @@ class Home extends SessionController
 {
     public function index()
     {
-        if ($_SESSION['logged']) redirect('/login');
+        $this->session_parameters();
+
+        if (!$_SESSION['logged']) return redirect()->to(base_url('/login'));
 
         $data['INFO_title'] = "Aufgabenplaner: Aktuelles Projekt";
-        $data['CSS_bootstrap'] = base_url('codeigniter/public/styles/').'/bootstrap.css';
-        $data['CSS_custom'] = base_url('codeigniter/public/styles/').'/custom.css';
+        $data['CSS_bootstrap'] = base_url('/styles/').'/bootstrap.css';
+        $data['CSS_custom'] = base_url('/styles/').'/custom.css';
 
         $data['DATA_uebersicht'] = $this->create_uebersicht();
         $data['DATA_reiter'] = $this->create_reiter();
