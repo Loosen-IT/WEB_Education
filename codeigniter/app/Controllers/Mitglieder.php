@@ -6,7 +6,6 @@ use App\Models\MitgliederModel;
 
 class Mitglieder extends SessionController
 {
-
     public function __construct(){
         $this->MitgliederModel = new MitgliederModel();
     }
@@ -25,5 +24,18 @@ class Mitglieder extends SessionController
         echo view('templates/block.php');
 
         return view('pages/mitglieder');
+    }
+
+    public function check_password(){
+        $password = $this->MitgliederModel->loginMitglied();
+        if(password_verify($_POST['password'], $password[0]['passwort'])) return true;
+        else return false;
+    }
+
+    public function login(){
+        if($this->check_password()){
+            $this->session_parameters(NULL ,$_POST['username'],true);
+            redirect('home', 'refresh');
+        }
     }
 }

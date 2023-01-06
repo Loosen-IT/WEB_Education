@@ -22,7 +22,6 @@ class MitgliederModel extends Model {
     }
 
     public function createMitglied() {
-
         $this->mitglieder = $this->db->table('mitglieder');
         $this->mitglieder->insert(array(
             'username' => $_POST['username'],
@@ -31,18 +30,17 @@ class MitgliederModel extends Model {
     }
 
     public function updateMitglied() {
-
         $this->mitglieder = $this->db->table('mitglieder');
-        $this->mitglieder->where('mitglieder.id_mitglieder', $_POST['id_mitglieder']);
+        $this->mitglieder->where('mitglieder.username', $_POST['username']);
         $this->mitglieder->update(array(
             'username' => $_POST['username'],
-            'passwort' => $_POST['passwort'],
+            'passwort' => $_POST['password_new'],
             'email' => $_POST['email']));
     }
 
     public function deleteMitglied() {
         $this->mitglieder = $this->db->table('mitglieder');
-        $this->mitglieder->where('mitglieder.id_mitglieder', $_POST['id_mitglieder']);
+        $this->mitglieder->where('mitglieder.username', $_POST['username']);
         $this->mitglieder->delete();
     }
 

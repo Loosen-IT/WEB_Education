@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use CodeIgniter\Controller;
+use App\Models\MitgliederModel;
 
 class Login extends SessionController
 {
@@ -17,7 +18,7 @@ class Login extends SessionController
         echo view('pages/login');
     }
 
-    public function set_password(){
+    public function check_password(){
 
     }
 }
