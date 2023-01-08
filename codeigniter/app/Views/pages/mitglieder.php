@@ -127,10 +127,13 @@
         reset();
     }
 
+    document.getElementById('reset').onclick = function() {
+        reset();
+    }
+
     function reset(){
         document.getElementById("modus").innerHTML = "Erstellen";
-        document.getElementById("id_mitglieder").value = null;
-        document.getElementById("username").value = "";
+        document.getElementById("id_mitglieder").value = "";
         document.getElementById("email").value = "";
         document.getElementById("password").innerHTML = "";
         document.getElementById("belong").removeAttribute('checked');
