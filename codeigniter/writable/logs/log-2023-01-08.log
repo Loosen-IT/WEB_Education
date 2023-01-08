@@ -40,3 +40,91 @@ in APPPATH\Controllers\Aufgaben.php on line 20.
  3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
  4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 05:09:46 --> Undefined array key "username"
+in APPPATH\Models\MitgliederModel.php on line 43.
+ 1 APPPATH\Models\MitgliederModel.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Models\\MitgliederModel.php', 43)
+ 2 APPPATH\Controllers\Mitglieder.php(66): App\Models\MitgliederModel->createMitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->create()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 05:37:44 --> Undefined array key "email"
+in APPPATH\Models\MitgliederModel.php on line 45.
+ 1 APPPATH\Models\MitgliederModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Models\\MitgliederModel.php', 45)
+ 2 APPPATH\Controllers\Mitglieder.php(66): App\Models\MitgliederModel->createMitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->create()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 06:32:48 --> Undefined array key "password_new"
+in APPPATH\Models\MitgliederModel.php on line 53.
+ 1 APPPATH\Models\MitgliederModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password_new"', 'APPPATH\\Models\\MitgliederModel.php', 53)
+ 2 APPPATH\Controllers\Mitglieder.php(67): App\Models\MitgliederModel->updateMitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->save()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 06:40:35 --> Undefined array key "password_new"
+in APPPATH\Models\MitgliederModel.php on line 53.
+ 1 APPPATH\Models\MitgliederModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password_new"', 'APPPATH\\Models\\MitgliederModel.php', 53)
+ 2 APPPATH\Controllers\Mitglieder.php(67): App\Models\MitgliederModel->updateMitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->save()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 07:58:35 --> Undefined array key "passwort"
+in APPPATH\Controllers\Mitglieder.php on line 56.
+ 1 APPPATH\Controllers\Mitglieder.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "passwort"', 'APPPATH\\Controllers\\Mitglieder.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:01:46 --> var_dump() expects at least 1 argument, 0 given
+in APPPATH\Controllers\Mitglieder.php on line 59.
+ 1 APPPATH\Controllers\Mitglieder.php(59): var_dump()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:04:46 --> Undefined array key "password_new"
+in APPPATH\Models\MitgliederModel.php on line 69.
+ 1 APPPATH\Models\MitgliederModel.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password_new"', 'APPPATH\\Models\\MitgliederModel.php', 69)
+ 2 APPPATH\Controllers\Mitglieder.php(59): App\Models\MitgliederModel->updateMitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:05:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Mitglieder.php on line 60.
+ 1 APPPATH\Controllers\Mitglieder.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Mitglieder.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 08:06:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Mitglieder.php on line 60.
+ 1 APPPATH\Controllers\Mitglieder.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Mitglieder.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-08 08:15:54 --> mysqli_sql_exception: Unknown column 'mitglieder.id' in 'where clause' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\MitgliederModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(55): App\Models\MitgliederModel->getMitglieder_ID('14')
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-08 08:15:54 --> Call to a member function getRowArray() on bool
+in APPPATH\Models\MitgliederModel.php on line 35.
+ 1 APPPATH\Controllers\Mitglieder.php(55): App\Models\MitgliederModel->getMitglieder_ID('14')
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
