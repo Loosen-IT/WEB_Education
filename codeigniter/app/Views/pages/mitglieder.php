@@ -27,7 +27,7 @@
                             $tmp = 0;
                             $db = db_connect();
                             $query = $db->query('SELECT * FROM projekte_mitglieder WHERE id_projekte='.$_SESSION['STATUS_project'].' AND id_mitglieder='.$member['id_mitglieder']);
-                            if(sizeof($query->getResultArray()) !== 0){ echo 'checked'; $tmp=1;}
+                            if($query && sizeof($query->getResultArray()) !== 0){ echo 'checked'; $tmp=1;}
                             ?>
                         >
                     </td>
@@ -81,7 +81,7 @@
 
         <label id="modus" value="1" class="fs-4 mt-4 pb-3">Erstellen</label>
         <br>
-        <form id="form" action="<?= base_url('Mitglieder/create')?>" method="post">
+        <form id="form" action="<?= base_url('mitglieder/create')?>" method="post">
             <input id="id_mitglieder" name="id_mitglieder" type="text" hidden="true" value="">
 
             <label class="fs-6 mt-1 mb-2">Username:</label>
@@ -120,7 +120,7 @@
         document.getElementById("password").innerHTML = "";
         if(checked !== 1) document.getElementById("belong").removeAttribute('checked');
         else document.getElementById("belong").setAttribute('checked','true');
-        document.getElementById("form").setAttribute('action','<?php echo base_url('Mitglieder/update');?>')
+        document.getElementById("form").setAttribute('action','<?php echo base_url('mitglieder/update');?>')
     }
 
     document.getElementById('reset').onclick = function() {
@@ -137,7 +137,7 @@
         document.getElementById("email").value = "";
         document.getElementById("password").innerHTML = "";
         document.getElementById("belong").removeAttribute('checked');
-        document.getElementById("form").setAttribute('action','<?php echo base_url('Mitglieder/create');?>')
+        document.getElementById("form").setAttribute('action','<?php echo base_url('mitglieder/create');?>')
         document.getElementById("id_mitglieder").value = "";
     }
 </script>

@@ -19,3 +19,19 @@ footer {
     /* Height of the footer*/
     height: 40px;
 }
+
+.register-button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #1976D2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    color: #0D47A1;
+}

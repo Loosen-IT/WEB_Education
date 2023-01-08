@@ -21,15 +21,46 @@
                 <br>
                 <br>
                 <div class="mb-3">
-                    Noch nicht registriert? <a href="register.html"> Registrierung</a>
-                    <br>
-                    <br>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+                    Noch nicht registriert?
+                    <button class="register-button" type="button" data-bs-toggle="modal" data-bs-target="#registriere">
+                        Registrieren
+                    </button>
                 </div>
             </form>
         </div>
-
         <div class="col-2">
 
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="registriere" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Registrierung</h5>
+                    </div>
+                    <form id="form" action="<?= base_url('mitglieder/create')?>" method="post">
+                    <div class="modal-body">
+
+                            <label class="fs-6 mt-1 mb-2">Username:</label>
+                            <input type="text" placeholder="Username" id="username" name="username" class="form-control" />
+                            <br>
+                            <label class="fs-6 mt-1 mb-2">E-Mail Adresse:</label>
+                            <input type="text" placeholder="E-Mail-Adresse" id="email" name="email" class="form-control" />
+                            <br>
+                            <label class="fs-6 mt-1 mb-2">Passwort:</label>
+                            <input type="password" placeholder="Passwort" id="password" name="passwort" class="form-control" />
+                            <br>
+                            <br>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#registriere">Abbruch</button>
+                        <button type="submit" class="btn btn-primary">Registrieren</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>

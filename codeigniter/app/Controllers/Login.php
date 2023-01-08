@@ -23,7 +23,7 @@ class Login extends SessionController
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 
-        return view('pages/login');
+        return view('pages/login')  ;
     }
 
     public function check_password(){
@@ -37,10 +37,14 @@ class Login extends SessionController
         if($this->check_password()){
             $_SESSION['STATUS_logged'] = true;
             $_SESSION['DATA_user'] = $this->MitgliederModel->getMitglieder_MAIL($_POST['email']);
-            if(!isset($_COOKIE['STATUS_project'])){
-                setcookie('STATUS_project',$_COOKIE['STATUS_project'] = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'])['id_projekte']);
+            if(!isset($_COOKIE[$_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project'])){
+                if($this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder']) !== null){
+                    setcookie($_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project',$_COOKIE[$_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project'] = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'])['id_projekte']);
+                } else {
+                    setcookie($_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project',$_COOKIE[$_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project'] = 'none');
+                }
             }
-            $_SESSION['STATUS_project'] = $_COOKIE['STATUS_project'];
+            $_SESSION['STATUS_project'] = $_COOKIE[$_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project'];
             return redirect()->to(base_url('/home'));
         } else {
             return redirect()->to(base_url('/login'));

@@ -66,9 +66,15 @@ class Mitglieder extends SessionController
 
 
     public function create(){
-
+        $_POST['passwort'] = password_hash($_POST['passwort'],PASSWORD_DEFAULT);
         $this->MitgliederModel->createMitglieder();
         return redirect()->to(base_url('mitglieder'));
+    }
+
+    public function create_not_logged(){
+        $_POST['passwort'] = password_hash($_POST['passwort'],PASSWORD_DEFAULT);
+        $this->MitgliederModel->createMitglieder();
+        return redirect()->to(base_url('login'));
     }
 }
 
