@@ -102,7 +102,7 @@
             <br>
 
             <button type="submit" class="btn btn-primary">Speichern</button>
-            <button type="button" onclick="reset()" class="btn btn-info text-white">Reset</button>
+            <button type="button" id="reset" onclick="reset()" class="btn btn-info text-white">Reset</button>
         </form>
     </div>
 
@@ -118,6 +118,10 @@
         document.getElementById("password").innerHTML = "";
         if(checked !== 1) document.getElementById("belong").removeAttribute('checked');
         else document.getElementById("belong").setAttribute('checked','true');
+    }
+
+    document.getElementById('reset').onclick = function() {
+        reset();
     }
 
     function reset(){
