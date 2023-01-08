@@ -48,9 +48,10 @@ $routes->get('/aufgaben', 'Aufgaben::index');
 $routes->post('/aufgaben', 'Aufgaben::index');
 
 $routes->get('/mitglieder', 'Mitglieder::index');
-$routes->post('/mitglieder', 'Mitglieder::index');
-$routes->post('/mitglieder/delete', 'Mitglieder::delete');
-$routes->post('/mitglieder/update', 'Mitglieder::update');
+$routes->post('/Mitglieder', 'Mitglieder::index');
+$routes->post('/Mitglieder/delete', 'Mitglieder::delete');
+$routes->post('/Mitglieder/create', 'Mitglieder::create');
+$routes->post('/Mitglieder/update', 'Mitglieder::update');
 
 $routes->get('/reiter', 'Reiter::index');
 $routes->post('/reiter', 'Reiter::index');

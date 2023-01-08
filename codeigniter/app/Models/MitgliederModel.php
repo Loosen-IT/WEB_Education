@@ -21,6 +21,22 @@ class MitgliederModel extends Model {
             return $result->getResultArray();
     }
 
+    public function getMitglieder_ID ($mitglieder_id = NULL) {
+        $this->mitglieder = $this->db->table('mitglieder');
+        $this->mitglieder->select('*');
+
+        IF ($mitglieder_id!= NULL)
+            $this->mitglieder->where('id_mitglieder', $mitglieder_id);
+
+        $this->mitglieder->orderBy('username');
+        $result = $this->mitglieder->get();
+
+        if ($mitglieder_id != NULL)
+            return $result->getRowArray();
+        else
+            return $result->getResultArray();
+    }
+
     public function getMitglieder_MAIL ($mitglieder_mail = NULL) {
         $this->mitglieder = $this->db->table('mitglieder');
         $this->mitglieder->select('*');
@@ -48,6 +64,15 @@ class MitgliederModel extends Model {
     public function updateMitglieder() {
         $this->mitglieder = $this->db->table('mitglieder');
         $this->mitglieder->where('mitglieder.username', $_POST['username']);
+        $this->mitglieder->update(array(
+            'username' => $_POST['username'],
+            'passwort' => $_POST['password_new'],
+            'email' => $_POST['email']));
+    }
+
+    public function updateMitglieder_ID() {
+        $this->mitglieder = $this->db->table('mitglieder');
+        $this->mitglieder->where('id_mitglieder', $_POST['id_mitglieder']);
         $this->mitglieder->update(array(
             'username' => $_POST['username'],
             'passwort' => $_POST['password_new'],

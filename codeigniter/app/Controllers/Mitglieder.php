@@ -52,31 +52,23 @@ class Mitglieder extends SessionController
 
 
     public function update(){
+        $help= $this->MitgliederModel->getMitglieder_ID($_POST['id_mitglieder']);
 
-
-    }
-
-
-    public function mitglieder_create(){
-        echo('<pre>');
-        var_dump($_POST);
-        echo('</pre>');
-        //die();
-
-        if(isset($_POST['id_mitglieder']) && $_POST['id'] != ''){
-            $this->MitgliederModel->updateMitglieder();
+        if($_POST['passwort']!='' && $help['username']== $_POST['username']){
+            $_POST['password_new']=$_POST['passwort'];
         }
         else{
-            $this->MitgliederModel->createMitglieder();
+            $_POST['password_new']=$help['passwort'];
         }
+        $this->MitgliederModel->updateMitglieder_ID();
         return redirect()->to(base_url('mitglieder'));
     }
 
-    public function mitglieder_delete(){
-        if(isset($_POST['id_mitglieder']) && $_POST['id'] != ''){
-            $this->MitgliederModel->deleteMitglieder();
-        }
+
+    public function create(){
+
+        $this->MitgliederModel->createMitglieder();
+        return redirect()->to(base_url('mitglieder'));
     }
-
-
 }
+

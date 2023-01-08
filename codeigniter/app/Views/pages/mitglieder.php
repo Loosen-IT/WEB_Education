@@ -24,10 +24,10 @@
                     <td>
                         <input type="checkbox" disabled id="<?php echo $member['id_mitglieder']; ?>_status"
                             <?php
-                                $tmp = 0;
-                                $db = db_connect();
-                                $query = $db->query('SELECT * FROM projekte_mitglieder WHERE id_projekte='.$_SESSION['STATUS_project'].' AND id_mitglieder='.$member['id_mitglieder']);
-                                if(sizeof($query->getResultArray()) !== 0){ echo 'checked'; $tmp=1;}
+                            $tmp = 0;
+                            $db = db_connect();
+                            $query = $db->query('SELECT * FROM projekte_mitglieder WHERE id_projekte='.$_SESSION['STATUS_project'].' AND id_mitglieder='.$member['id_mitglieder']);
+                            if(sizeof($query->getResultArray()) !== 0){ echo 'checked'; $tmp=1;}
                             ?>
                         >
                     </td>
@@ -81,16 +81,17 @@
 
         <label id="modus" value="1" class="fs-4 mt-4 pb-3">Erstellen</label>
         <br>
-        <form action="<?= base_url('Mitglieder/mitglieder_create')?>" method="post">
+        <form id="form" action="<?= base_url('Mitglieder/create')?>" method="post">
+            <input id="id_mitglieder" name="id_mitglieder" type="text" hidden="true" value="">
 
             <label class="fs-6 mt-1 mb-2">Username:</label>
-            <input type="text" placeholder="Username" id="username" class="form-control" />
+            <input type="text" placeholder="Username" id="username" name="username" class="form-control" />
             <br>
             <label class="fs-6 mt-1 mb-2">E-Mail Adresse:</label>
-            <input type="text" placeholder="E-Mail-Adresse" id="mail" class="form-control" />
+            <input type="text" placeholder="E-Mail-Adresse" id="email" name="email" class="form-control" />
             <br>
             <label class="fs-6 mt-1 mb-2">Passwort:</label>
-            <input type="password" placeholder="Passwort" id="password" class="form-control" />
+            <input type="password" placeholder="Passwort" id="password" name="passwort" class="form-control" />
             <br>
 
             <div class="form-check">
@@ -113,11 +114,17 @@
 <script>
     function edit(id, username, mail,checked){
         document.getElementById("modus").innerHTML = "Bearbeiten von User " + id;
+        document.getElementById("id_mitglieder").value = id;
         document.getElementById("username").value = username;
-        document.getElementById("mail").value = mail;
+        document.getElementById("email").value = mail;
         document.getElementById("password").innerHTML = "";
         if(checked !== 1) document.getElementById("belong").removeAttribute('checked');
         else document.getElementById("belong").setAttribute('checked','true');
+        document.getElementById("form").setAttribute('action','<?php echo base_url('Mitglieder/update');?>')
+    }
+
+    document.getElementById('reset').onclick = function() {
+        reset();
     }
 
     document.getElementById('reset').onclick = function() {
@@ -126,9 +133,11 @@
 
     function reset(){
         document.getElementById("modus").innerHTML = "Erstellen";
-        document.getElementById("username").value = "";
-        document.getElementById("mail").value = "";
+        document.getElementById("id_mitglieder").value = "";
+        document.getElementById("email").value = "";
         document.getElementById("password").innerHTML = "";
         document.getElementById("belong").removeAttribute('checked');
+        document.getElementById("form").setAttribute('action','<?php echo base_url('Mitglieder/create');?>')
+        document.getElementById("id_mitglieder").value = "";
     }
 </script>
