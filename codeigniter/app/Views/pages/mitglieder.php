@@ -121,7 +121,7 @@
     }
 
     function reset(){
-        document.getElementById("username").innerHTML = "Erstellen";
+        document.getElementById("modus").innerHTML = "Erstellen";
         document.getElementById("username").value = "";
         document.getElementById("mail").value = "";
         document.getElementById("password").innerHTML = "";

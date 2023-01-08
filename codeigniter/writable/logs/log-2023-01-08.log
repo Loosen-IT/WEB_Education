@@ -40,3 +40,17 @@ in APPPATH\Controllers\Aufgaben.php on line 20.
  3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
  4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 04:41:45 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Aufgaben.php on line 20.
+ 1 APPPATH\Controllers\Aufgaben.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Aufgaben.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-08 04:41:45 --> Undefined array key "STATUS_logged"
+in APPPATH\Controllers\Aufgaben.php on line 20.
+ 1 APPPATH\Controllers\Aufgaben.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_logged"', 'APPPATH\\Controllers\\Aufgaben.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Aufgaben->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aufgaben))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
