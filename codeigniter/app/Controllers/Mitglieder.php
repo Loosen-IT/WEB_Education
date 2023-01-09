@@ -52,6 +52,17 @@ class Mitglieder extends SessionController
 
 
     public function update(){
+//        echo '<pre>',
+//        var_dump($_POST),
+//        '</pre>';
+//
+//        echo '<pre>',
+//        var_dump($_SESSION['STATUS_project']),
+//        '</pre>';
+//
+//        echo $this->ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder',22222);
+//        die();
+
         $help= $this->MitgliederModel->getMitglieder_ID($_POST['id_mitglieder']);
 
         if($_POST['passwort']!='' && $help['username']== $_POST['username']){
@@ -61,6 +72,26 @@ class Mitglieder extends SessionController
             $_POST['password_new']=$help['passwort'];
         }
         $this->MitgliederModel->updateMitglieder_ID();
+
+        // Fügt Mitglied zum Projekt neu hinzu, wenn checkbox ausgewählt ist und das Mitglied noch nicht am Projekt teilnimmt
+
+        $worksOn = $this->ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder',$_SESSION['STATUS_project']);
+        if($_POST['belong']=='on'){
+            if(!$worksOn) {
+                $_POST['id_projekte'] = $_SESSION['STATUS_project'];
+                $this->ProjekteModel->createProjekte_Mitglieder();
+            }
+        }
+
+        // Entfernt Mitglied vom Projekt , wenn checkbox nicht ausgewählt ist und das Mitglied am Projekt teilnimmt
+
+        if($_POST['belong']!='on'){
+            if($worksOn) {
+                $_POST['id_projekte'] = $_SESSION['STATUS_project'];
+                $this->ProjekteModel->deleteProjekte_Mitglieder();
+            }
+        }
+
         return redirect()->to(base_url('mitglieder'));
     }
 
@@ -68,6 +99,12 @@ class Mitglieder extends SessionController
     public function create(){
         $_POST['passwort'] = password_hash($_POST['passwort'],PASSWORD_DEFAULT);
         $this->MitgliederModel->createMitglieder();
+
+        if($_POST['belong']=='on') {
+            $_POST['id_projekte'] = $_SESSION['STATUS_project'];
+            $this->ProjekteModel->createProjekte_Mitglieder();
+        }
+
         return redirect()->to(base_url('mitglieder'));
     }
 
