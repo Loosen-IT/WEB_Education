@@ -52,17 +52,13 @@ class Mitglieder extends SessionController
 
 
     public function update(){
-
-        $help= $this->MitgliederModel->getMitglieder_ID($_POST['id_mitglieder']);
-
-        if(!($_POST['passwort']!='' && $help['username']==$_POST['username'])){
+        if($_POST['passwort']==''){
             return redirect()->to(base_url('mitglieder'));
         }
+
         $this->MitgliederModel->updateMitglieder_ID();
 
         // Fügt Mitglied zum Projekt neu hinzu, wenn checkbox ausgewählt ist und das Mitglied noch nicht am Projekt teilnimmt
-
-        $worksOn = $this->ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder',$_SESSION['STATUS_project']);
 
         if(isset($_POST['belong'])){
             $_POST['id_projekte'] = $_SESSION['STATUS_project'];

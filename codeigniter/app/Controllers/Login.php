@@ -34,7 +34,6 @@ class Login extends SessionController
     }
 
     public function login(){
-        if(!isset($_POST['check'])) return redirect()->to(base_url('/login'));
         if($this->check_password()){
             $_SESSION['STATUS_logged'] = true;
             $_SESSION['DATA_user'] = $this->MitgliederModel->getMitglieder_MAIL($_POST['email']);
