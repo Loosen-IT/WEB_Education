@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\ProjekteModel;
 use CodeIgniter\Controller;
 use App\Models\AufgabenModel;
 use App\Models\ReiterModel;
@@ -10,6 +11,7 @@ class Home extends SessionController
     public function __construct(){
         $this->AufgabenModel = new AufgabenModel();
         $this->ReiterModel = new ReiterModel();
+        $this->ProjekteModel = new ProjekteModel();
     }
 
     function create_uebersicht(){
@@ -39,7 +41,8 @@ class Home extends SessionController
 
         if (!$_SESSION["STATUS_logged"]) return redirect()->to(base_url('login/logout'));
 
-        $data['INFO_title'] = "Aufgabenplaner: Aktuelles Projekt";
+        $tmp = $this->ProjekteModel->getProjekte($_SESSION['STATUS_project']);
+        $data['INFO_title'] = "Aufgabenplaner: ".$tmp['name'];
         $data['CSS_bootstrap'] = base_url('/styles/').'/bootstrap.css';
         $data['CSS_custom'] = base_url('/styles/').'/custom.css';
 

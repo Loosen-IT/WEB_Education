@@ -30,6 +30,24 @@
             ?>
         </div>
     </div>
+    <?php
+    if ($_SESSION['STATUS_project']==0){
+        ?>
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="p-3 container bg-warning rounded" style="border:solid #000000; text-align: center">
+                <b>
+                Notiz: <br>
+                Das Projekt "Sammlung" dient temporär als Sammel-Projekt, für die User, die noch keinem Projekt zugeordnet sind.
+                Sobald die "Projekt hinzufügen" Funktion implementiert ist, wird statt "Aktuelles Projekt" keines angezeigt,
+                sofern der Nutzer keinem Projekt zugehörig ist.
+                </b>
+            </div>
+        </div>
+        <div class="col-4"></div>
+        <?php
+    }
+    ?>
 </div>
 </body>
 </html>

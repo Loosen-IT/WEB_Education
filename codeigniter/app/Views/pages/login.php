@@ -14,10 +14,10 @@
                     <input name="passwort" type="password" placeholder="Passwort" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input" id="check_it" name="check" onchange="abler()">
                     <label class="form-check-label" for="exampleCheck1">AGBs und Datenschutzbedingungen akzeptieren</label>
                 </div>
-                <button name="ok" type="submit" class="btn btn-primary">Einloggen</button>
+                <button name="ok" disabled id="ok_button" type="submit" class="btn btn-primary">Einloggen</button>
                 <br>
                 <br>
                 <div class="mb-3">
@@ -33,6 +33,18 @@
         <div class="col-2">
 
         </div>
+
+
+        <script type="text/javascript">
+            function abler(){
+                var button = document.getElementById('ok_button');
+                if(document.getElementById('check_it').checked) button.disabled = false;
+                else button.disabled = true;
+            }
+        </script>
+
+
+
         <!-- Modal -->
         <div class="modal fade" id="registriere" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -64,6 +76,17 @@
         </div>
     </div>
 </div>
-
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <div class="p-3 container bg-warning rounded" style="border:solid #000000; text-align: center">
+            <b>
+                Notiz: <br>
+                Die Funktion Registrieren ist bereits implementiert.
+            </b>
+        </div>
+    </div>
+    <div class="col-4"></div>
+</div>
 </body>
 </html>

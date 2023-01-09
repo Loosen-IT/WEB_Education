@@ -54,6 +54,7 @@ class MitgliederModel extends Model {
     }
 
     public function createMitglieder() {
+        $_POST['passwort'] = password_hash($_POST['passwort'], PASSWORD_DEFAULT);
         $this->mitglieder = $this->db->table('mitglieder');
         $this->mitglieder->insert(array(
             'username' => $_POST['username'],
@@ -62,20 +63,22 @@ class MitgliederModel extends Model {
     }
 
     public function updateMitglieder() {
+        $_POST['passwort'] = password_hash($_POST['passwort'], PASSWORD_DEFAULT);
         $this->mitglieder = $this->db->table('mitglieder');
         $this->mitglieder->where('mitglieder.username', $_POST['username']);
         $this->mitglieder->update(array(
             'username' => $_POST['username'],
-            'passwort' => $_POST['password_new'],
+            'passwort' => $_POST['passwort'],
             'email' => $_POST['email']));
     }
 
     public function updateMitglieder_ID() {
+        $_POST['passwort'] = password_hash($_POST['passwort'], PASSWORD_DEFAULT);
         $this->mitglieder = $this->db->table('mitglieder');
         $this->mitglieder->where('id_mitglieder', $_POST['id_mitglieder']);
         $this->mitglieder->update(array(
             'username' => $_POST['username'],
-            'passwort' => $_POST['password_new'],
+            'passwort' => $_POST['passwort'],
             'email' => $_POST['email']));
     }
 

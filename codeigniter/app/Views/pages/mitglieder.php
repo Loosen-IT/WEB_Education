@@ -82,7 +82,7 @@
         <label id="modus" value="1" class="fs-4 mt-4 pb-3">Erstellen</label>
         <br>
         <form id="form" action="<?= base_url('mitglieder/create')?>" method="post">
-            <input id="id_mitglieder" name="id_mitglieder" type="text" hidden="true" value="">
+            <input id="id_mitglieder" name="id_mitglieder" type="text" hidden value="">
 
             <label class="fs-6 mt-1 mb-2">Username:</label>
             <input type="text" placeholder="Username" id="username" name="username" class="form-control" />
@@ -94,7 +94,7 @@
             <input type="password" placeholder="Passwort" id="password" name="passwort" class="form-control" />
             <br>
 
-            <div class="form-check">
+            <div class="form-check" id="belong_box" style="display:none">
                 <input class="form-check-input" type="checkbox" id="belong" name="belong">
                 <label class="form-check-label" for="belong">
                     Zum Projekt zugeordnet
@@ -113,18 +113,15 @@
 </div>
 <script>
     function edit(id, username, mail,checked){
-        document.getElementById("modus").innerHTML = "Bearbeiten von User " + id;
         document.getElementById("id_mitglieder").value = id;
+        document.getElementById("modus").innerHTML = "Bearbeiten von User " + document.getElementById("id_mitglieder").value;
         document.getElementById("username").value = username;
         document.getElementById("email").value = mail;
         document.getElementById("password").innerHTML = "";
+        document.getElementById("belong_box").style.display='block';
         if(checked !== 1) document.getElementById("belong").removeAttribute('checked');
         else document.getElementById("belong").setAttribute('checked','true');
         document.getElementById("form").setAttribute('action','<?php echo base_url('mitglieder/update');?>')
-    }
-
-    document.getElementById('reset').onclick = function() {
-        reset();
     }
 
     document.getElementById('reset').onclick = function() {
@@ -136,7 +133,9 @@
         document.getElementById("id_mitglieder").value = "";
         document.getElementById("email").value = "";
         document.getElementById("password").innerHTML = "";
-        document.getElementById("belong").removeAttribute('checked');
+
+        document.getElementById("belong_box").style.display='none';
+
         document.getElementById("form").setAttribute('action','<?php echo base_url('mitglieder/create');?>')
         document.getElementById("id_mitglieder").value = "";
     }

@@ -84,18 +84,17 @@ class ProjekteModel extends Model {
     }
 
     public function deleteProjekte_Mitglieder() {
-
         $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
-        $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $_POST['id_projekte'] and 'projekte_mitglieder.id_mitglieder',$_POST['id_mitglieder']);
+        $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $_POST['id_projekte']);
+        $this->projekte_mitglieder->where('projekte_mitglieder.id_mitglieder',$_POST['id_mitglieder']);
         $this->projekte_mitglieder->delete();
     }
 
     public function worksOnProjekte_Mitglieder($mitglieder_id, $projekte_id) {
-
         $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
-        $this->projekte_mitglieder = $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $projekte_id and 'projekte_mitglieder.id_mitglieder',$mitglieder_id);
-        $num = $this->projekte_mitglieder->countAll();  // Der Befehl ist falsch
-        return $num > 0;
+        $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $projekte_id and 'projekte_mitglieder.id_mitglieder',$mitglieder_id);
+        $get = $this->projekte_mitglieder->get()->getResultArray();
+        return sizeof($get)>0;
     }
 
     public function getProjekte_Mitglieder_Join_M ($projekte_id = NULL) {

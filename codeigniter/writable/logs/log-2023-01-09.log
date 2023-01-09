@@ -1366,3 +1366,284 @@ Stack trace:
 #10 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
 #12 {main}
+ERROR - 2023-01-09 11:23:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`education`.`projekte_mitglieder`, CONSTRAINT `mitglieder_rel_1` FOREIGN KEY (`id_mitglieder`) REFERENCES `mitglieder` (`id_mitglieder`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(70): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(105): App\Models\ProjekteModel->createProjekte_Mitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->create()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-01-09 11:31:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`education`.`projekte_mitglieder`, CONSTRAINT `mitglieder_rel_1` FOREIGN KEY (`id_mitglieder`) REFERENCES `mitglieder` (`id_mitglieder`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(70): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(105): App\Models\ProjekteModel->createProjekte_Mitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->create()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-01-09 11:33:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`education`.`projekte_mitglieder`, CONSTRAINT `mitglieder_rel_1` FOREIGN KEY (`id_mitglieder`) REFERENCES `mitglieder` (`id_mitglieder`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(70): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(105): App\Models\ProjekteModel->createProjekte_Mitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->create()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-09 11:33:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::result_array()
+in APPPATH\Models\ProjekteModel.php on line 96.
+ 1 APPPATH\Controllers\Mitglieder.php(78): App\Models\ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder', 1)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:34:46 --> sizeof(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+in APPPATH\Models\ProjekteModel.php on line 97.
+ 1 APPPATH\Models\ProjekteModel.php(97): sizeof(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 APPPATH\Controllers\Mitglieder.php(78): App\Models\ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder', 1)
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:36:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Models\ProjekteModel.php on line 97.
+ 1 APPPATH\Controllers\Mitglieder.php(78): App\Models\ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder', 1)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:36:42 --> Call to a member function where() on null
+in APPPATH\Models\ProjekteModel.php on line 95.
+ 1 APPPATH\Controllers\Mitglieder.php(78): App\Models\ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder', 1)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:37:30 --> Call to a member function where() on null
+in APPPATH\Models\ProjekteModel.php on line 95.
+ 1 APPPATH\Controllers\Mitglieder.php(78): App\Models\ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder', 1)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:37:43 --> Call to a member function get() on null
+in APPPATH\Models\ProjekteModel.php on line 96.
+ 1 APPPATH\Controllers\Mitglieder.php(78): App\Models\ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder', 1)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:37:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::result_array()
+in APPPATH\Models\ProjekteModel.php on line 97.
+ 1 APPPATH\Controllers\Mitglieder.php(78): App\Models\ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder', 1)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:37:56 --> Call to a member function result_array() on null
+in APPPATH\Models\ProjekteModel.php on line 97.
+ 1 APPPATH\Controllers\Mitglieder.php(78): App\Models\ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder', 1)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 11:38:21 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Models\ProjekteModel.php on line 97.
+ 1 APPPATH\Controllers\Mitglieder.php(78): App\Models\ProjekteModel->worksOnProjekte_Mitglieder('id_mitglieder', 1)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-09 11:52:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`education`.`projekte_mitglieder`, CONSTRAINT `mitglieder_rel_1` FOREIGN KEY (`id_mitglieder`) REFERENCES `mitglieder` (`id_mitglieder`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(70): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(96): App\Models\ProjekteModel->createProjekte_Mitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->create()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-01-09 12:01:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`education`.`projekte_mitglieder`, CONSTRAINT `mitglieder_rel_1` FOREIGN KEY (`id_mitglieder`) REFERENCES `mitglieder` (`id_mitglieder`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(70): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(97): App\Models\ProjekteModel->createProjekte_Mitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->create()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-01-09 12:01:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`education`.`projekte_mitglieder`, CONSTRAINT `mitglieder_rel_1` FOREIGN KEY (`id_mitglieder`) REFERENCES `mitglieder` (`id_mitglieder`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(70): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(97): App\Models\ProjekteModel->createProjekte_Mitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->create()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-01-09 12:27:18 --> mysqli_sql_exception: Duplicate entry 'test' for key 'username' in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `mi...', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\MitgliederModel.php(59): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Mitglieder.php(85): App\Models\MitgliederModel->createMitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Mitglieder->create()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-09 12:38:43 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:39:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:39:45 --> Undefined array key 0
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:41:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Login.php on line 43.
+ 1 APPPATH\Controllers\Login.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Login.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:45:35 --> Undefined array key "projekte"
+in APPPATH\Controllers\Home.php on line 44.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "projekte"', 'APPPATH\\Controllers\\Home.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:46:06 --> Undefined array key "name"
+in APPPATH\Controllers\Home.php on line 44.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\Home.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:46:10 --> Undefined array key "STATUS_projekt"
+in APPPATH\Controllers\Home.php on line 44.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_projekt"', 'APPPATH\\Controllers\\Home.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:46:24 --> Undefined array key "STATUS_projekt"
+in APPPATH\Controllers\Home.php on line 44.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_projekt"', 'APPPATH\\Controllers\\Home.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:46:25 --> Undefined array key "STATUS_projekt"
+in APPPATH\Controllers\Home.php on line 44.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_projekt"', 'APPPATH\\Controllers\\Home.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:46:26 --> Undefined array key "STATUS_projekt"
+in APPPATH\Controllers\Home.php on line 44.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_projekt"', 'APPPATH\\Controllers\\Home.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:46:49 --> Undefined array key "STATUS_projekt"
+in APPPATH\Controllers\Home.php on line 44.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "STATUS_projekt"', 'APPPATH\\Controllers\\Home.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:47:26 --> Undefined array key "name"
+in APPPATH\Controllers\Home.php on line 45.
+ 1 APPPATH\Controllers\Home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\Home.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:47:28 --> Undefined array key "name"
+in APPPATH\Controllers\Home.php on line 45.
+ 1 APPPATH\Controllers\Home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\Home.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:49:54 --> Undefined array key "name"
+in APPPATH\Controllers\Home.php on line 45.
+ 1 APPPATH\Controllers\Home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Controllers\\Home.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:50:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 45.
+ 1 APPPATH\Controllers\Home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:50:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 45.
+ 1 APPPATH\Controllers\Home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:52:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 45.
+ 1 APPPATH\Controllers\Home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 12:52:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 45.
+ 1 APPPATH\Controllers\Home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Home.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

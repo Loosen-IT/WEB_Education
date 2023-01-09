@@ -34,17 +34,16 @@ class Login extends SessionController
     }
 
     public function login(){
+        if(!isset($_POST['check'])) return redirect()->to(base_url('/login'));
         if($this->check_password()){
             $_SESSION['STATUS_logged'] = true;
             $_SESSION['DATA_user'] = $this->MitgliederModel->getMitglieder_MAIL($_POST['email']);
-            if(!isset($_COOKIE[$_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project'])){
-                if($this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder']) !== null){
-                    setcookie($_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project',$_COOKIE[$_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project'] = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'])['id_projekte']);
-                } else {
-                    setcookie($_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project',$_COOKIE[$_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project'] = 'none');
-                }
-            }
-            $_SESSION['STATUS_project'] = $_COOKIE[$_SESSION['DATA_user']['id_mitglieder'].'_STATUS_project'];
+
+            //Aktuell ist noch keine Auswahl von Projekten implementiert
+            $tmp = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder']);
+            if(isset($tmp['id_projekte'])) $_SESSION['STATUS_project'] = $tmp['id_projekte'];
+            else $_SESSION['STATUS_project']='0';
+
             return redirect()->to(base_url('/home'));
         } else {
             return redirect()->to(base_url('/login'));
