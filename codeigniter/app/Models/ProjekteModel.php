@@ -21,7 +21,7 @@ class ProjekteModel extends Model {
             return $result->getResultArray();
     }
 
-    public function createProjekt() {
+    public function createProjekte() {
 
         $this->projekte = $this->db->table('projekte');
         $this->projekte->insert(array(
@@ -62,6 +62,40 @@ class ProjekteModel extends Model {
             return $result->getRowArray();
         else
             return $result->getResultArray();
+    }
+
+    public function createProjekte_Mitglieder() {
+
+        $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
+        $this->projekte_mitglieder->insert(array(
+            'id_projekte' => $_POST['id_projekte'],
+            'id_mitglieder' => $_POST['id_mitglieder']
+        ));
+    }
+
+    public function updateProjekte_Mitglieder() {
+
+        $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
+        $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $_POST['id_projekte']);
+        $this->projekte_mitglieder->update(array(
+            'id_projekte' => $_POST['id_projekte'],
+            'id_mitglieder' => $_POST['id_mitglieder']
+        ));
+    }
+
+    public function deleteProjekte_Mitglieder() {
+
+        $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
+        $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $_POST['id_projekte'] and 'projekte_mitglieder.id_mitglieder',$_POST['id_mitglieder']);
+        $this->projekte_mitglieder->delete();
+    }
+
+    public function worksOnProjekte_Mitglieder($mitglieder_id, $projekte_id) {
+
+        $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
+        $this->projekte_mitglieder = $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $projekte_id and 'projekte_mitglieder.id_mitglieder',$mitglieder_id);
+        $num = $this->projekte_mitglieder->countAll();  // Der Befehl ist falsch
+        return $num > 0;
     }
 
     public function getProjekte_Mitglieder_Join_M ($projekte_id = NULL) {

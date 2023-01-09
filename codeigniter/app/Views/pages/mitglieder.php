@@ -95,7 +95,7 @@
             <br>
 
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="belong">
+                <input class="form-check-input" type="checkbox" id="belong" name="belong">
                 <label class="form-check-label" for="belong">
                     Zum Projekt zugeordnet
                 </label>
