@@ -1647,3 +1647,83 @@ in APPPATH\Controllers\Home.php on line 45.
  3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 14:44:15 --> Undefined array key "id_projekte"
+in APPPATH\Controllers\Mitglieder.php on line 61.
+ 1 APPPATH\Controllers\Mitglieder.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_projekte"', 'APPPATH\\Controllers\\Mitglieder.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 14:50:02 --> Undefined array key "id_projekte"
+in APPPATH\Models\ProjekteModel.php on line 88.
+ 1 APPPATH\Models\ProjekteModel.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_projekte"', 'APPPATH\\Models\\ProjekteModel.php', 88)
+ 2 APPPATH\Controllers\Mitglieder.php(75): App\Models\ProjekteModel->deleteProjekte_Mitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 14:50:30 --> Undefined array key "id_projekte"
+in APPPATH\Models\ProjekteModel.php on line 88.
+ 1 APPPATH\Models\ProjekteModel.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_projekte"', 'APPPATH\\Models\\ProjekteModel.php', 88)
+ 2 APPPATH\Controllers\Mitglieder.php(75): App\Models\ProjekteModel->deleteProjekte_Mitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 14:51:24 --> Undefined array key "id_projekte"
+in APPPATH\Models\ProjekteModel.php on line 79.
+ 1 APPPATH\Models\ProjekteModel.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_projekte"', 'APPPATH\\Models\\ProjekteModel.php', 79)
+ 2 APPPATH\Controllers\Mitglieder.php(69): App\Models\ProjekteModel->updateProjekte_Mitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 14:51:45 --> Undefined array key "id_projekte"
+in APPPATH\Models\ProjekteModel.php on line 79.
+ 1 APPPATH\Models\ProjekteModel.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_projekte"', 'APPPATH\\Models\\ProjekteModel.php', 79)
+ 2 APPPATH\Controllers\Mitglieder.php(69): App\Models\ProjekteModel->updateProjekte_Mitglieder()
+ 3 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 4 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 15:20:13 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Mitglieder.php on line 66.
+ 1 APPPATH\Controllers\Mitglieder.php(66): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 15:21:06 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Mitglieder.php on line 66.
+ 1 APPPATH\Controllers\Mitglieder.php(66): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 15:21:30 --> sizeof(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Mitglieder.php on line 66.
+ 1 APPPATH\Controllers\Mitglieder.php(66): sizeof(null)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 15:25:12 --> Call to undefined function App\Controllers\sizeo()
+in APPPATH\Controllers\Mitglieder.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 15:25:26 --> sizeof(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Mitglieder.php on line 66.
+ 1 APPPATH\Controllers\Mitglieder.php(66): sizeof(true)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 15:26:43 --> sizeof(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Mitglieder.php on line 66.
+ 1 APPPATH\Controllers\Mitglieder.php(66): sizeof(true)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Mitglieder->update()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitglieder))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

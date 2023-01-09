@@ -26,8 +26,8 @@ class App extends BaseConfig
      */
 
     //TODO: Correct url later
-    public $baseURL = 'http://localhost/education/codeigniter/public/';
-    //public $baseURL = 'https://education.loosen-it.de/';
+    //public $baseURL = 'http://localhost/education/codeigniter/public/';
+    public $baseURL = 'https://education.loosen-it.de/';
 
     /**
      * --------------------------------------------------------------------------

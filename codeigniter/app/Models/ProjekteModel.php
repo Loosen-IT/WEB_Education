@@ -48,14 +48,15 @@ class ProjekteModel extends Model {
         $this->projekte->delete();
     }
 
+    //TODO: mit if clause vermutlich nicht korrekt
     public function getProjekte_Mitglieder($projekte_mitglieder_id = NULL) {
         $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
         $this->projekte_mitglieder->select('*');
 
-        IF ($projekte_mitglieder_id != NULL)
-            $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $projekte_mitglieder_id);
+        if ($projekte_mitglieder_id != NULL)
+            $this->projekte_mitglieder->where('id_mitglieder', $projekte_mitglieder_id);
 
-        $this->projekte_mitglieder->orderBy('id_projekte');
+        //$this->projekte_mitglieder->orderBy('id_projekte');
         $result = $this->projekte_mitglieder->get();
 
         if ($projekte_mitglieder_id != NULL)
@@ -65,18 +66,13 @@ class ProjekteModel extends Model {
     }
 
     public function createProjekte_Mitglieder() {
-
-        $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
-        $this->projekte_mitglieder->insert(array(
-            'id_projekte' => $_POST['id_projekte'],
-            'id_mitglieder' => $_POST['id_mitglieder']
-        ));
+        $query="insert into projekte_mitglieder values('".$_POST['id_projekte']."','".$_POST['id_mitglieder']."')";
+        $this->db->query($query);
     }
 
     public function updateProjekte_Mitglieder() {
-
         $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
-        $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $_POST['id_projekte']);
+        $this->projekte_mitglieder->where('id_projekte', $_POST['id_projekte']);
         $this->projekte_mitglieder->update(array(
             'id_projekte' => $_POST['id_projekte'],
             'id_mitglieder' => $_POST['id_mitglieder']
@@ -85,16 +81,17 @@ class ProjekteModel extends Model {
 
     public function deleteProjekte_Mitglieder() {
         $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
-        $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $_POST['id_projekte']);
-        $this->projekte_mitglieder->where('projekte_mitglieder.id_mitglieder',$_POST['id_mitglieder']);
+        $this->projekte_mitglieder->where('id_projekte', $_POST['id_projekte']);
+        $this->projekte_mitglieder->where('id_mitglieder',$_POST['id_mitglieder']);
         $this->projekte_mitglieder->delete();
     }
 
     public function worksOnProjekte_Mitglieder($mitglieder_id, $projekte_id) {
         $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
-        $this->projekte_mitglieder->where('projekte_mitglieder.id_projekte', $projekte_id and 'projekte_mitglieder.id_mitglieder',$mitglieder_id);
+        $this->projekte_mitglieder->where('id_projekte', $projekte_id);
+        $this->projekte_mitglieder->where('id_mitglieder',$mitglieder_id);
         $get = $this->projekte_mitglieder->get()->getResultArray();
-        return sizeof($get)>0;
+        return sizeof($get)==0;
     }
 
     public function getProjekte_Mitglieder_Join_M ($projekte_id = NULL) {

@@ -58,18 +58,19 @@ class Mitglieder extends SessionController
 
         $this->MitgliederModel->updateMitglieder_ID();
 
+        $help = $this->ProjekteModel->worksOnProjekte_Mitglieder($_POST['id_mitglieder'],$_SESSION['STATUS_project']);
+        $_POST['id_projekte'] = $_SESSION['STATUS_project'];
+
         // Fügt Mitglied zum Projekt neu hinzu, wenn checkbox ausgewählt ist und das Mitglied noch nicht am Projekt teilnimmt
-
         if(isset($_POST['belong'])){
-            $_POST['id_projekte'] = $_SESSION['STATUS_project'];
-            $this->ProjekteModel->createProjekte_Mitglieder();
-        }
-
+            if($help){
+                $this->ProjekteModel->createProjekte_Mitglieder();
+            }
+        } else {
         // Entfernt Mitglied vom Projekt , wenn checkbox nicht ausgewählt ist und das Mitglied am Projekt teilnimmt
-
-        if(!isset($_POST['belong'])){
-            $_POST['id_projekte'] = $_SESSION['STATUS_project'];
-            $this->ProjekteModel->deleteProjekte_Mitglieder();
+            if($help){ } else {
+                $this->ProjekteModel->deleteProjekte_Mitglieder();
+            }
         }
 
         return redirect()->to(base_url('mitglieder'));
