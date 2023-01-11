@@ -85,13 +85,13 @@
             <input id="id_mitglieder" name="id_mitglieder" type="text" hidden value="">
 
             <label class="fs-6 mt-1 mb-2">Username:</label>
-            <input type="text" placeholder="Username" id="username" name="username" class="form-control" />
+            <input type="text" placeholder="Username" id="username" name="username" class="form-control" required/>
             <br>
             <label class="fs-6 mt-1 mb-2">E-Mail Adresse:</label>
-            <input type="text" placeholder="E-Mail-Adresse" id="email" name="email" class="form-control" />
+            <input type="text" placeholder="E-Mail-Adresse" id="email" name="email" class="form-control" required/>
             <br>
             <label class="fs-6 mt-1 mb-2">Passwort:</label>
-            <input type="password" placeholder="Passwort" id="password" name="passwort" class="form-control" />
+            <input type="password" placeholder="Passwort" id="password" name="passwort" class="form-control" required/>
             <br>
 
             <div class="form-check" id="belong_box" style="display:none">
