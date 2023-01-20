@@ -4,6 +4,9 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\ReiterModel;
 
+use AllowDynamicProperties;
+#[AllowDynamicProperties]
+
 class Reiter extends SessionController
 {
     public function __construct(){

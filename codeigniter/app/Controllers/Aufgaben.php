@@ -6,6 +6,9 @@ use App\Models\MitgliederModel;
 use App\Models\AufgabenModel;
 use App\Models\ReiterModel;
 
+use AllowDynamicProperties;
+#[AllowDynamicProperties]
+
 class Aufgaben extends SessionController
 {
     public function __construct(){

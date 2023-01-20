@@ -2,6 +2,9 @@
 
 use CodeIgniter\Model;
 
+use AllowDynamicProperties;
+#[AllowDynamicProperties]
+
 class MitgliederModel extends Model {
 
 

@@ -2,8 +2,10 @@
 
 use CodeIgniter\Model;
 
-class AufgabenModel extends Model {
+use AllowDynamicProperties;
+#[AllowDynamicProperties]
 
+class AufgabenModel extends Model {
 
     public function getAufgaben ($aufgaben_id = NULL) {
         $this->aufgaben = $this->db->table('aufgaben');

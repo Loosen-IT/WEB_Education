@@ -5,6 +5,9 @@ use App\Models\ProjekteModel;
 use CodeIgniter\Controller;
 use App\Models\MitgliederModel;
 
+use AllowDynamicProperties;
+#[AllowDynamicProperties]
+
 class Login extends SessionController
 {
     public function __construct(){

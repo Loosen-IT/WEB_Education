@@ -33,7 +33,7 @@
     <?php
     if ($_SESSION['STATUS_project']==0){
         ?>
-        <div class="col-4"></div>
+        <div class="col-4 pt-5"></div>
         <div class="col-4">
             <div class="p-3 container bg-warning rounded" style="border:solid #000000; text-align: center">
                 <b>

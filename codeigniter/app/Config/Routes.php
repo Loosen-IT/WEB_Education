@@ -60,9 +60,16 @@ $routes->post('/reiter', 'Reiter::index');
 
 $routes->get('/projekte', 'Projekte::index');
 $routes->post('/projekte', 'Projekte::index');
+$routes->get('projekte/create', 'Projekte::create');
+$routes->post('projekte/create', 'Projekte::create');
+$routes->get('projekte/update', 'Projekte::update');
+$routes->post('projekte/update', 'Projekte::update');
+$routes->get('/projekte/delete_or_swap', 'Projekte::delete_or_swap');
+$routes->post('/projekte/delete_or_swap', 'Projekte::delete_or_swap');
 
 $routes->get('/debug', 'Debugging::index');
 $routes->post('/debug', 'Debugging::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

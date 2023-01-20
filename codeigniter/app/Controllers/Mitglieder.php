@@ -5,6 +5,8 @@ use CodeIgniter\Controller;
 use App\Models\MitgliederModel;
 use App\Models\ProjekteModel;
 
+use AllowDynamicProperties;
+#[AllowDynamicProperties]
 
 class Mitglieder extends SessionController
 {

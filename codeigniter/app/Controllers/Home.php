@@ -6,6 +6,9 @@ use CodeIgniter\Controller;
 use App\Models\AufgabenModel;
 use App\Models\ReiterModel;
 
+use AllowDynamicProperties;
+#[AllowDynamicProperties]
+
 class Home extends SessionController
 {
     public function __construct(){

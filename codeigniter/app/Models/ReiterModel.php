@@ -2,6 +2,9 @@
 
 use CodeIgniter\Model;
 
+use AllowDynamicProperties;
+#[AllowDynamicProperties]
+
 class ReiterModel extends Model {
 
 

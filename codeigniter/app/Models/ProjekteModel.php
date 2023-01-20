@@ -2,8 +2,10 @@
 
 use CodeIgniter\Model;
 
-class ProjekteModel extends Model {
+use AllowDynamicProperties;
+#[AllowDynamicProperties]
 
+class ProjekteModel extends Model {
 
     public function getProjekte($projekte_id = NULL) {
         $this->projekte = $this->db->table('projekte');

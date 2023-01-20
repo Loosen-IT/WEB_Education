@@ -9,14 +9,22 @@
         <a href="<?= base_url('/home') ?>">Aktuelles Projekt</a>
     </li>
     <ul>
-        <li class="list-group-item">
-            <a href="<?= base_url('/reiter') ?>">Reiter</a>
-        </li>
-        <li class="list-group-item">
-            <a href="<?= base_url('/aufgaben') ?>">Aufgaben</a>
-        </li>
-        <li class="list-group-item">
-            <a href="<?= base_url('/mitglieder') ?>">Mitglieder</a>
-        </li>
+        <?php
+        use App\Models\ProjekteModel;
+        $projektemodel = new ProjekteModel();
+        if(!$projektemodel->worksOnProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'], $_SESSION['STATUS_project']) || $_SESSION['STATUS_project']==0){
+            ?>
+            <li class="list-group-item">
+                <a href="<?= base_url('/reiter') ?>">Reiter</a>
+            </li>
+            <li class="list-group-item">
+                <a href="<?= base_url('/aufgaben') ?>">Aufgaben</a>
+            </li>
+            <li class="list-group-item">
+                <a href="<?= base_url('/mitglieder') ?>">Mitglieder</a>
+            </li>
+            <?php
+        }
+        ?>
     </ul>
 </ul>
