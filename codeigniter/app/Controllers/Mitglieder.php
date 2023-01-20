@@ -60,7 +60,7 @@ class Mitglieder extends SessionController
 
         $this->MitgliederModel->updateMitglieder_ID();
 
-        $help = $this->ProjekteModel->worksOnProjekte_Mitglieder($_POST['id_mitglieder'],$_SESSION['STATUS_project']);
+        $help = $this->ProjekteModel->worksNotOnProjekte_Mitglieder($_POST['id_mitglieder'],$_SESSION['STATUS_project']);
         $_POST['id_projekte'] = $_SESSION['STATUS_project'];
 
         // Fügt Mitglied zum Projekt neu hinzu, wenn checkbox ausgewählt ist und das Mitglied noch nicht am Projekt teilnimmt

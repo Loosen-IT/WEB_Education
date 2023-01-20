@@ -41,4 +41,40 @@ class Validation extends BaseConfig
     // --------------------------------------------------------------------
     // Rules
     // --------------------------------------------------------------------
+
+    public $mitgliederedit = [
+      'username' => 'required | is_unique[mitglieder.username]',
+        'email' => 'required | valid_email | is_unique[miglieder.email]'
+    ];
+
+    public $mitgliederedit_errors = [
+        'username' =>[
+            'required' => 'Bitte tragen Sie einen Username ein.',
+            'is_unique[mitglieder.username]' => 'Dieser Username ist bereits vergeben.'
+        ],
+        'email' => [
+          'required' => 'Bitte tragen Sie eine E-Mail-Adresse ein.',
+          'valid_email' => 'Bitte tragen Sie eine gültige E-Mail-Adresse ein.',
+          'is_unique[miglieder.email]' => 'Diese E-Mail ist bereits vergeben.'
+        ],
+    ];
+
+    public $loginvalidation = [
+        'email' => 'required|valid_email',
+        'passwort' => 'required',
+        'check' => 'required'
+    ];
+
+    public $loginvalidation_errors = [
+      'email' =>[
+          'required' => 'Bitte tragen Sie eine E-Mail-Adresse ein.',
+          'valid_email' => 'Bitte tragen Sie eine gültige E-Mail-Adresse ein.'
+      ],
+        'passwort' => [
+            'required' => 'Bitte tragen Sie ein Passwort ein.'
+        ],
+        'check' => [
+            'required' => 'Bitte akzeptieren Sie die AGBs.'
+        ]
+    ];
 }
