@@ -7,15 +7,24 @@
             <form method="post" action="<?php echo base_url('/login/login');?>">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email-Addresse</label>
-                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email-Adresse eingeben" required>
+                    <input name="email" type="email" class="form-control <?= (isset($error['email']))?'is-invalid':'' ?>" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email-Adresse eingeben" required>
+                    <div class="invalid-feedback">
+                        <?= (isset($error['email']))?$error['email']:'' ?>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Passwort</label>
-                    <input name="passwort" type="password" placeholder="Passwort" class="form-control" id="exampleInputPassword1" required>
+                    <input name="passwort" type="password" placeholder="Passwort" class="form-control <?= (isset($error['passwort']))?'is-invalid':'' ?>" id="exampleInputPassword1" required>
+                    <div class="invalid-feedback">
+                        <?= (isset($error['passwort']))?$error['passwort']:'' ?>
+                    </div>
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="check_it" name="check" onchange="abler()" required>
+                    <input type="checkbox" class="form-check-input <?= (isset($error['check']))?'is-invalid':'' ?>" id="check_it" name="check" onchange="abler()" required>
                     <label class="form-check-label" for="exampleCheck1">AGBs und Datenschutzbedingungen akzeptieren</label>
+                    <div class="invalid-feedback">
+                        <?= (isset($error['check']))?$error['check']:'' ?>
+                    </div>
                 </div>
                 <button name="ok" disabled id="ok_button" type="submit" class="btn btn-primary">Einloggen</button>
                 <br>

@@ -34,18 +34,33 @@ class Login extends SessionController
     }
 
     public function login(){
-        if($this->check_password()){
-            $_SESSION['STATUS_logged'] = true;
-            $_SESSION['DATA_user'] = $this->MitgliederModel->getMitglieder_MAIL($_POST['email']);
 
-            //Aktuell ist noch keine Auswahl von Projekten implementiert
-            $tmp = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder']);
-            if(isset($tmp['id_projekte'])) $_SESSION['STATUS_project'] = $tmp['id_projekte'];
-            else $_SESSION['STATUS_project']='0';
+        if($this->validation->run($_POST,'loginvalidation')) {
+            if ($this->check_password()) {
+                $_SESSION['STATUS_logged'] = true;
+                $_SESSION['DATA_user'] = $this->MitgliederModel->getMitglieder_MAIL($_POST['email']);
 
-            return redirect()->to(base_url('/home'));
-        } else {
-            return redirect()->to(base_url('/login'));
+                //Aktuell ist noch keine Auswahl von Projekten implementiert
+                $tmp = $this->ProjekteModel->getProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder']);
+                if (isset($tmp['id_projekte'])) $_SESSION['STATUS_project'] = $tmp['id_projekte'];
+                else $_SESSION['STATUS_project'] = '0';
+
+                return redirect()->to(base_url('/home'));
+            } else {
+                return redirect()->to(base_url('/login'));
+            }
+        }
+        else {
+            $data['INFO_title'] = "Aufgabenplaner: Login";
+            $data['CSS_bootstrap'] = base_url().'/styles/bootstrap.css';
+            $data['CSS_custom'] = base_url().'/styles/custom.css';
+
+            $data['logindaten'] = $_POST;
+            $data['error'] = $this->validation->getErrors();
+
+            echo view('templates/head.php', $data);
+            echo view('templates/block.php');
+            return view('pages/login');
         }
     }
 
