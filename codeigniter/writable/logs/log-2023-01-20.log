@@ -1,0 +1,134 @@
+CRITICAL - 2023-01-20 10:32:10 --> required  is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '345', [...], [...])
+ 3 APPPATH\Controllers\Login.php(37): CodeIgniter\Validation\Validation->run([...], 'loginvalidation')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 10:36:44 --> required  is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '35', [...], [...])
+ 3 APPPATH\Controllers\Login.php(37): CodeIgniter\Validation\Validation->run([...], 'loginvalidation')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 10:39:54 --> Interface "App\Controllers\ValidationInterface" not found
+in APPPATH\Controllers\Login.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(283): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Login.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 5 SYSTEMPATH\CodeIgniter.php(875): class_exists('\\App\\Controllers\\Login', true)
+ 6 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 10:40:28 --> Call to undefined method App\Controllers\Login::session_parameters()
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 11:01:28 --> required  is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '123', [...], [...])
+ 3 APPPATH\Controllers\Login.php(37): CodeIgniter\Validation\Validation->run([...], 'loginvalidation')
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 11:30:15 --> Class "Config\MyRulesSets" not found
+in SYSTEMPATH\Validation\Validation.php on line 586.
+ 1 SYSTEMPATH\Validation\Validation.php(122): CodeIgniter\Validation\Validation->loadRuleSets()
+ 2 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\Login.php(38): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 11:30:26 --> Class "Config\MyRulesSets" not found
+in SYSTEMPATH\Validation\Validation.php on line 586.
+ 1 SYSTEMPATH\Validation\Validation.php(122): CodeIgniter\Validation\Validation->loadRuleSets()
+ 2 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 3 APPPATH\Controllers\Login.php(38): CodeIgniter\Controller->validate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 11:30:55 --> required  is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '123', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Login.php(38): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 11:43:14 --> required  is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '123', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Login.php(58): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 11:47:25 --> required  is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', '123^1', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Login.php(59): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 11:47:58 --> required  is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 's', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Login.php(59): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 11:50:01 --> Undefined variable $CSS_bootstrap
+in APPPATH\Views\templates\head.php on line 5.
+ 1 APPPATH\Views\templates\head.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $CSS_bootstrap', 'APPPATH\\Views\\templates\\head.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\templates\\head.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('templates/head.php', [], true)
+ 5 APPPATH\Controllers\Login.php(78): view('templates/head.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 12:00:06 --> Undefined variable $CSS_bootstrap
+in APPPATH\Views\templates\head.php on line 5.
+ 1 APPPATH\Views\templates\head.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $CSS_bootstrap', 'APPPATH\\Views\\templates\\head.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\templates\\head.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('templates/head.php', [], true)
+ 5 APPPATH\Controllers\Login.php(57): view('templates/head.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 12:03:34 --> Undefined variable $data
+in APPPATH\Views\pages\login.php on line 5.
+ 1 APPPATH\Views\pages\login.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\pages\\login.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/login', [], true)
+ 5 APPPATH\Controllers\Login.php(63): view('pages/login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

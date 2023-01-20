@@ -86,11 +86,12 @@ class ProjekteModel extends Model {
         $this->projekte_mitglieder->delete();
     }
 
-    public function worksOnProjekte_Mitglieder($mitglieder_id, $projekte_id) {
+    public function worksNotOnProjekte_Mitglieder($mitglieder_id, $projekte_id) {
         $this->projekte_mitglieder = $this->db->table('projekte_mitglieder');
         $this->projekte_mitglieder->where('id_projekte', $projekte_id);
         $this->projekte_mitglieder->where('id_mitglieder',$mitglieder_id);
         $get = $this->projekte_mitglieder->get()->getResultArray();
+
         return sizeof($get)==0;
     }
 
