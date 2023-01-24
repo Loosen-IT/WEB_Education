@@ -28,7 +28,7 @@ class Login extends SessionController
         echo view('templates/head.php', $data);
         echo view('templates/block.php');
 
-        return view('pages/login')  ;
+        return view('pages/login');
     }
 
     public function check_password(){

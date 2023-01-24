@@ -22,7 +22,7 @@ class App extends BaseConfig
      * explicitly and never rely on auto-guessing, especially in production
      * environments.
      */
-    public string $baseURL = 'http://localhost/CI_education/public';
+    public string $baseURL = 'http://localhost/education/public';
     //public string $baseURL = 'https://education.loosen-it.de';
 
     /**

@@ -41,10 +41,9 @@ class Projekte extends SessionController
     }
 
     public function delete_or_swap(){
-        if(isset($_POST['change'])){
-            $_SESSION['STATUS_project'] = $_POST['id_projekte'];
-            return redirect('Projekte::index');
-        }
+        session_start();
+        unset($_SESSION['STATUS_project']);
+        $_SESSION['STATUS_project'] = $_POST['id_projekte'];
 
         if(isset($_POST['delete'])){
             if($_POST['id_projekte']==0){
@@ -55,8 +54,9 @@ class Projekte extends SessionController
             $_SESSION['STATUS_project'] = '0';
             //}
             $this->ProjekteModel->deleteProjekte();
-            return redirect()->to(base_url('projekte'));
         }
+
+        return redirect()->to(base_url('projekte'));
     }
 
     public function update(){
