@@ -1,0 +1,76 @@
+ERROR - 2023-01-24 13:27:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'education'@'swhtw91092.uni-trier.de' (using password: YES) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('loosen-it.de', 'education', '1Education!', 'education', 3306, '', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwor...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\MitgliederModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Login.php(33): App\Models\MitgliederModel->loginMitglieder()
+#6 C:\xampp\htdocs\education\codeigniter\app\Controllers\Login.php(42): App\Controllers\Login->check_password()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Login->login()
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'swhtw91092.uni-trier.de' (using password: YES) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwor...', Array, false)
+#3 C:\xampp\htdocs\education\codeigniter\app\Models\MitgliederModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\education\codeigniter\app\Controllers\Login.php(33): App\Models\MitgliederModel->loginMitglieder()
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Login.php(42): App\Controllers\Login->check_password()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Login->login()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-24 13:27:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'swhtw91092.uni-trier.de' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `passwort`
+FROM `mitglieder`
+WHERE `mitglieder`.`email` = :mitglieder.email:', [...], false)
+ 3 APPPATH\Models\MitgliederModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(33): App\Models\MitgliederModel->loginMitglieder()
+ 5 APPPATH\Controllers\Login.php(42): App\Controllers\Login->check_password()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 13:42:04 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Views\templates\sidebar.php(15): CodeIgniter\Model->__call('worksOnProjekte_Mitglieder', [...])
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\templates\\sidebar.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('templates/sidebar', [], true)
+ 7 APPPATH\Views\pages\uebersicht.php(3): view('templates/sidebar')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+11 APPPATH\Controllers\Home.php(59): view('pages/uebersicht', [...])
+12 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+13 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+14 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-24 13:42:11 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Views\templates\sidebar.php(15): CodeIgniter\Model->__call('worksOnProjekte_Mitglieder', [...])
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\templates\\sidebar.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('templates/sidebar', [], true)
+ 7 APPPATH\Views\pages\uebersicht.php(3): view('templates/sidebar')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\uebersicht.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/uebersicht', [], true)
+11 APPPATH\Controllers\Home.php(59): view('pages/uebersicht', [...])
+12 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Home->index()
+13 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+14 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

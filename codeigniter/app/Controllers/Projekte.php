@@ -51,9 +51,9 @@ class Projekte extends SessionController
                 return redirect()->to(base_url('projekte'));
             }
 
-            //if($_SESSION['STATUS_project'] == $_POST['id_projekte']){
-            $_SESSION['STATUS_project'] = '0';
-            //}
+            if($_SESSION['STATUS_project'] == $_POST['id_projekte']){
+                $_SESSION['STATUS_project'] = '0';
+            }
             $this->ProjekteModel->deleteProjekte();
             return redirect()->to(base_url('projekte'));
         }
