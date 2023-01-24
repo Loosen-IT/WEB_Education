@@ -1,0 +1,37 @@
+.table-button {
+    background-color: #ffffff;
+    border: solid #ffffff;
+    border-radius:0.5rem;
+    border-width:0.1rem;
+}
+
+.table-button:hover{
+    border: solid #0000FF;
+    border-radius:0.5rem;
+    border-width:0.1rem;
+}
+
+footer {
+    position: fixed;
+    padding: 1rem 1rem 1rem 1rem;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+}
+
+.register-button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #1976D2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    color: #0D47A1;
+}
