@@ -12,7 +12,7 @@
         <?php
         use App\Models\ProjekteModel;
         $projektemodel = new ProjekteModel();
-        if(!$projektemodel->worksOnProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'], $_SESSION['STATUS_project']) || $_SESSION['STATUS_project']==0){
+        if(!$projektemodel->worksNotOnProjekte_Mitglieder($_SESSION['DATA_user']['id_mitglieder'], $_SESSION['STATUS_project']) || $_SESSION['STATUS_project']==0){
             ?>
             <li class="list-group-item">
                 <a href="<?= base_url('/reiter') ?>">Reiter</a>
