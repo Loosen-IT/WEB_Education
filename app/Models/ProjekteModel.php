@@ -68,8 +68,14 @@ class ProjekteModel extends Model {
     }
 
     public function createProjekte_Mitglieder() {
-        $query="insert into projekte_mitglieder values('".$_POST['id_projekte']."','".$_POST['id_mitglieder']."')";
-        $this->db->query($query);
+
+        $this->projekte = $this->db->table('projekte_mitglieder');
+        $this->projekte->insert(array(
+            'id_projekte' => $_POST['id_projekte'],
+            'id_mitglieder' => $_POST['id_mitglieder'],
+        ));
+//        $query="insert into projekte_mitglieder values('".$_POST['id_projekte']."','".$_POST['id_mitglieder']."')";
+//        $this->db->query($query);
     }
 
     public function updateProjekte_Mitglieder() {
@@ -97,6 +103,14 @@ class ProjekteModel extends Model {
         return sizeof($get)==0;
     }
 
+    public function projektName(){
+        $this->projekte_mitglieder = $this->db->table('projekte');
+        $this->projekte_mitglieder->where('id_ersteller',$_POST['id_ersteller']);
+        $this->projekte_mitglieder->where('name',$_POST['name']);
+        $this->projekte_mitglieder->where('beschreibung',$_POST['beschreibung']);
+        $this->projekte_mitglieder->select('id_projekte');
+        return $this->projekte_mitglieder->getRowArray();
+    }
     public function getProjekte_Mitglieder_Join_M ($projekte_id = NULL) {
 
         $this->pm_join_m = $this->db->query('SELECT * FROM mitglieder m INNER JOIN projekte_mitglieder pm ON m.id_mitglieder=pm.id_mitglieder ');

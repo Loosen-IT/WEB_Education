@@ -1,0 +1,162 @@
+ERROR - 2023-01-28 08:30:22 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'education'@'swhtw6028.uni-trier.de' (using password: YES) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('loosen-it.de', 'education', '1Education!', 'education', 3306, '', 0)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(118): App\Models\ProjekteModel->getProjekte()
+#6 C:\xampp\htdocs\education\codeigniter\app\Controllers\Projekte.php(28): App\Models\ProjekteModel->get_indexed_projekte()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Projekte->index()
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+#9 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'swhtw6028.uni-trier.de' (using password: YES) in C:\xampp\htdocs\education\codeigniter\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\education\codeigniter\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\education\codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\education\codeigniter\app\Models\ProjekteModel.php(118): App\Models\ProjekteModel->getProjekte()
+#5 C:\xampp\htdocs\education\codeigniter\app\Controllers\Projekte.php(28): App\Models\ProjekteModel->get_indexed_projekte()
+#6 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(925): App\Controllers\Projekte->index()
+#7 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+#8 C:\xampp\htdocs\education\codeigniter\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\education\codeigniter\public\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-28 08:30:22 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'swhtw6028.uni-trier.de' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `projekte`
+ORDER BY `name`', [], false)
+ 3 APPPATH\Models\ProjekteModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Models\ProjekteModel.php(118): App\Models\ProjekteModel->getProjekte()
+ 5 APPPATH\Controllers\Projekte.php(28): App\Models\ProjekteModel->get_indexed_projekte()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 08:41:48 --> Undefined array key "id_ersteller"
+in APPPATH\Controllers\Projekte.php on line 37.
+ 1 APPPATH\Controllers\Projekte.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_ersteller"', 'APPPATH\\Controllers\\Projekte.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 08:49:19 --> Undefined property: App\Controllers\Projekte::$db
+in APPPATH\Controllers\Projekte.php on line 40.
+ 1 APPPATH\Controllers\Projekte.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Projekte::$db', 'APPPATH\\Controllers\\Projekte.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 08:51:10 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(40): CodeIgniter\Model->__call('projectNumber', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 08:54:00 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(41): CodeIgniter\Model->__call('projectNumber', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 08:56:36 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(41): CodeIgniter\Model->__call('projectNumber', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 08:59:51 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(41): CodeIgniter\Model->__call('projectNumber', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 09:00:30 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(41): CodeIgniter\Model->__call('projectNumber', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 09:01:30 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(41): CodeIgniter\Model->__call('projectNumber', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 09:03:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::countAll()
+in APPPATH\Controllers\Projekte.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 09:06:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(40): CodeIgniter\Model->__call('projectNumber', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 09:07:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(40): CodeIgniter\Model->__call('projectNumber', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 09:07:58 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(40): CodeIgniter\Model->__call('projectNumber', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 09:16:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(40): CodeIgniter\Model->__call('projektName', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-28 09:17:59 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Projekte.php(48): CodeIgniter\Model->__call('projektName', [])
+ 4 APPPATH\Controllers\Projekte.php(40): App\Controllers\Projekte->machwas()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Projekte->create()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

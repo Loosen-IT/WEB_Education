@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'loosen-it.de',
-        'username' => 'education',
-        'password' => '1Education!',
-        'database' => 'education',
+        'username' => 'sql_education_lo',
+        'password' => 'MKsnnaTzj34pas4j',
+        'database' => 'sql_education_lo',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

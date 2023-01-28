@@ -37,8 +37,8 @@
         <label id="modus" class="fs-3 fw-semibold mt-2 pb-2">Erstellen</label>
         <br>
         <form id="methode" method="post" action="<?= base_url('projekte/create'); ?>">
-<!--            <input name="id_projekte" type="text" placeholder="DEBUGGING" id="id_projekte" class="form-control" />-->
-<!--            <input name="id_ersteller" type="text" placeholder="DEBUGGING" id="id_mitglieder" class="form-control" value="--><?//= $_SESSION['DATA_user']['id_mitglieder']; ?><!--"/>-->
+            <input name="id_projekte" type="text" placeholder="DEBUGGING" id="id_projekte" class="form-control" hidden />
+            <input name="id_ersteller" type="text" placeholder="DEBUGGING" id="id_mitglieder" class="form-control" hidden value="<?= $_SESSION['DATA_user']['id_mitglieder']; ?>"/>
 
             <label class="fs-6 mt-1 mb-2">Projektname:</label>
             <input name="name" type="text" placeholder="Projektname" id="name" class="form-control" />
