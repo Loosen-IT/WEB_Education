@@ -30,7 +30,6 @@
             <button type="button" onclick="edit()" class="btn btn-primary">Bearbeiten</button>
             <button type="button" id="delete" data-bs-toggle="modal" data-bs-target="#loesche" class="btn btn-danger">Löschen</button>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
             <!-- Modal -->
             <div class="modal fade" id="loesche" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

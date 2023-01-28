@@ -36,6 +36,7 @@ class Projekte extends SessionController
     public function create(){
         $_POST['id_mitglieder'] = $_POST['id_ersteller'];
         $this->ProjekteModel->createProjekte();
+        $_POST['id_projekte'] = $this->ProjekteModel->projektID()[0];
         $this->ProjekteModel->createProjekte_Mitglieder();
         return redirect()->to(base_url('projekte'));
     }

@@ -103,14 +103,15 @@ class ProjekteModel extends Model {
         return sizeof($get)==0;
     }
 
-    public function projektName(){
-        $this->projekte_mitglieder = $this->db->table('projekte');
-        $this->projekte_mitglieder->where('id_ersteller',$_POST['id_ersteller']);
-        $this->projekte_mitglieder->where('name',$_POST['name']);
-        $this->projekte_mitglieder->where('beschreibung',$_POST['beschreibung']);
-        $this->projekte_mitglieder->select('id_projekte');
-        return $this->projekte_mitglieder->getRowArray();
+    public function projektID(){
+        $this->projekte = $this->db->table('projekte');
+        $this->projekte->select('id_projekte');
+        $this->projekte->where('id_ersteller',$_POST['id_ersteller']);
+        $this->projekte->where('name',$_POST['name']);
+        $this->projekte->where('beschreibung',$_POST['beschreibung']);
+        return $this->projekte->get()->getResultArray();
     }
+
     public function getProjekte_Mitglieder_Join_M ($projekte_id = NULL) {
 
         $this->pm_join_m = $this->db->query('SELECT * FROM mitglieder m INNER JOIN projekte_mitglieder pm ON m.id_mitglieder=pm.id_mitglieder ');

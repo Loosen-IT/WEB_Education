@@ -60,6 +60,7 @@ class Mitglieder extends SessionController
 
         $this->MitgliederModel->updateMitglieder_ID();
 
+        session_start();
         $help = $this->ProjekteModel->worksNotOnProjekte_Mitglieder($_POST['id_mitglieder'],$_SESSION['STATUS_project']);
         $_POST['id_projekte'] = $_SESSION['STATUS_project'];
 

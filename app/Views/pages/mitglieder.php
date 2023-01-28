@@ -32,7 +32,6 @@
                         >
                     </td>
                     <td>
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
                         <div class="container d-flex justify-content-end">
 
                             <button class="table-button" id="edit" onclick="edit(<?= "'".$member['id_mitglieder']."','".$member['username']."','".$member['email']."',".$tmp?>)">
