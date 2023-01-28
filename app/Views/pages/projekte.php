@@ -26,10 +26,29 @@
             }
             ?>
             <br>
-
             <button type="submit" name="change" class="btn btn-primary">Auswählen</button>
             <button type="button" onclick="edit()" class="btn btn-primary">Bearbeiten</button>
-            <button type="submit" name="delete" class="btn btn-danger">Löschen</button>
+            <button type="button" id="delete" data-bs-toggle="modal" data-bs-target="#loesche" class="btn btn-danger">Löschen</button>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+            <!-- Modal -->
+            <div class="modal fade" id="loesche" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Warnung</h5>
+                        </div>
+                        <div class="modal-body">
+                            Bist du dir sicher, dass das Projekt gelöscht werden soll?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#loesche" >Abbruch</button>
+                            <button type="submit" name="delete" class="btn btn-primary">Löschen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
         <br>
         <br>

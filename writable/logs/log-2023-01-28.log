@@ -1,0 +1,11 @@
+CRITICAL - 2023-01-28 13:51:32 --> Undefined variable $member
+in APPPATH\Views\pages\projekte.php on line 38.
+ 1 APPPATH\Views\pages\projekte.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $member', 'APPPATH\\Views\\pages\\projekte.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\projekte.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('pages/projekte', [], true)
+ 5 APPPATH\Controllers\Projekte.php(33): view('pages/projekte')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Projekte->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Projekte))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
