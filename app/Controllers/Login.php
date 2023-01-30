@@ -33,6 +33,7 @@ class Login extends SessionController
 
     public function check_password(){
         $password = $this->MitgliederModel->loginMitglieder();
+        if(!isset($password)) return false;
         if(password_verify($_POST['passwort'], $password['passwort'])) return true;
         else return false;
     }
